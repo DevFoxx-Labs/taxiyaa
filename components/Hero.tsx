@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Star, ShieldCheck, MapPin, Calendar, Clock, Car, ChevronRight, PhoneCall, ChevronLeft } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 
 interface HeroProps {
   onOpenBookingModal: (service?: string) => void;
@@ -42,6 +42,7 @@ const heroSlides = [
 ];
 
 export default function Hero({ onOpenBookingModal }: HeroProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [tripType, setTripType] = useState<"outstation" | "local" | "airport">("outstation");
   const [pickup, setPickup] = useState("");
@@ -49,6 +50,16 @@ export default function Hero({ onOpenBookingModal }: HeroProps) {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [vehicle, setVehicle] = useState("Sedan (Dzire / Etios)");
+
+  // Scroll Parallax Hooks
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"],
+  });
+
+  const parallaxBgY = useTransform(scrollYProgress, [0, 1], ["0%", "35%"]);
+  const parallaxTextY = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
+  const parallaxOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0.2]);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -59,26 +70,19 @@ export default function Hero({ onOpenBookingModal }: HeroProps) {
 
   const handleWidgetSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const serviceName =
-      tripType === "outstation"
-        ? "Car rental / local & outstation"
-        : tripType === "airport"
-        ? "Airport Rental Car transfer"
-        : "Car rental / local & outstation";
-
     const text = `Hello Taxiyaa! 🚖\n\nDirect Ride Enquiry:\n- *Trip Type*: ${tripType.toUpperCase()}\n- *Pickup*: ${pickup || "Mumbai"}\n- *Destination*: ${destination || "Outstation / Local"}\n- *Date*: ${date || "Flexible"}\n- *Time*: ${time || "Flexible"}\n- *Vehicle*: ${vehicle}`;
 
     window.open(`https://wa.me/916392767985?text=${encodeURIComponent(text)}`, "_blank");
   };
 
   return (
-    <section className="relative min-h-[92vh] flex flex-col justify-between overflow-hidden bg-[#0b0c10] pt-8 pb-12">
-      {/* Animated Hero Background Slideshow */}
-      <div className="absolute inset-0 z-0">
+    <section ref={containerRef} className="relative min-h-[92vh] flex flex-col justify-between overflow-hidden bg-[#0b0c10] pt-8 pb-12">
+      {/* Animated Hero Background Slideshow with Parallax Y Offset */}
+      <motion.div style={{ y: parallaxBgY, opacity: parallaxOpacity }} className="absolute inset-0 z-0 pointer-events-none">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
-            initial={{ opacity: 0, scale: 1.05 }}
+            initial={{ opacity: 0, scale: 1.08 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
@@ -94,11 +98,14 @@ export default function Hero({ onOpenBookingModal }: HeroProps) {
             <div className="absolute inset-0 bg-gradient-to-t from-[#0b0c10] via-transparent to-[#0b0c10]/80" />
           </motion.div>
         </AnimatePresence>
-      </div>
+      </motion.div>
 
       {/* Grid Pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none z-0" />
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#FAB304]/10 rounded-full blur-[140px] pointer-events-none z-0" />
+      <motion.div
+        style={{ y: useTransform(scrollYProgress, [0, 1], [0, 120]) }}
+        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#FAB304]/10 rounded-full blur-[140px] pointer-events-none z-0"
+      />
 
       {/* Main Hero Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full my-auto py-6">

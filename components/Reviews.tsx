@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { Star, Quote, CheckCircle2 } from "lucide-react";
 
 export default function Reviews() {
@@ -31,10 +32,19 @@ export default function Reviews() {
   ];
 
   return (
-    <section className="py-20 bg-nova-dark relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#13151b] border border-[#1e222d]">
+    <section className="py-20 bg-nova-dark relative overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute top-1/2 right-0 w-80 h-80 bg-[#FAB304]/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-3xl mx-auto mb-16 space-y-3"
+        >
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#13151b] border border-[#FAB304]/30 shadow-lg">
             <div className="flex text-amber-400">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-3.5 h-3.5 fill-amber-400 stroke-amber-400" />
@@ -49,11 +59,19 @@ export default function Reviews() {
           <p className="text-xs sm:text-sm text-slate-400 font-medium">
             Over 10,000+ satisfied passengers trust Taxiyaa for local cab rentals, airport drops & outstation journeys.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {reviews.map((rev, idx) => (
-            <div key={idx} className="card-nova p-6 flex flex-col justify-between space-y-4 relative group">
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: idx * 0.12 }}
+              whileHover={{ y: -6 }}
+              className="card-nova p-6 flex flex-col justify-between space-y-4 relative group transition-all duration-300 hover:border-[#FAB304]/50 hover:shadow-[0_10px_25px_rgba(250,179,4,0.12)]"
+            >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <div className="flex text-amber-400">
@@ -78,7 +96,7 @@ export default function Reviews() {
                   <span className="text-[11px] text-slate-400 font-semibold block">{rev.role} • {rev.location}</span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

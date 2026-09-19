@@ -1,6 +1,7 @@
 "use client";
 
-import { Building2, ShieldCheck, Award } from "lucide-react";
+import { motion } from "framer-motion";
+import { Building2, ShieldCheck } from "lucide-react";
 
 export default function CorporateTrust() {
   const corporateClients = [
@@ -19,8 +20,14 @@ export default function CorporateTrust() {
   return (
     <section className="py-16 bg-[#13151b] border-t border-[#1e222d] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-10 space-y-2">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0b0c10] border border-[#1e222d] text-[#FAB304] text-xs font-black uppercase">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-3xl mx-auto mb-10 space-y-2"
+        >
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0b0c10] border border-[#FAB304]/30 text-[#FAB304] text-xs font-black uppercase shadow-lg">
             <Building2 className="w-4 h-4" /> CORPORATE PARTNERSHIPS
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white uppercase tracking-tight">
@@ -29,7 +36,7 @@ export default function CorporateTrust() {
           <p className="text-xs sm:text-sm text-slate-400 font-medium">
             Preferred mobility partner for executive travel, VIP client delegations, and daily staff shift commute.
           </p>
-        </div>
+        </motion.div>
 
         {/* Corporate Client Ticker */}
         <div className="bg-[#0b0c10] border border-[#1e222d] rounded-2xl p-4 overflow-hidden shadow-xl select-none">
@@ -37,7 +44,7 @@ export default function CorporateTrust() {
             {[...corporateClients, ...corporateClients].map((client, idx) => (
               <div
                 key={idx}
-                className="inline-flex items-center gap-2.5 px-4 py-2 rounded-lg bg-[#13151b] border border-[#1e222d] text-xs font-extrabold text-slate-200 uppercase tracking-wider"
+                className="inline-flex items-center gap-2.5 px-4 py-2 rounded-lg bg-[#13151b] border border-[#1e222d] text-xs font-extrabold text-slate-200 uppercase tracking-wider hover:border-[#FAB304]/50 transition-colors"
               >
                 <ShieldCheck className="w-4 h-4 text-[#FAB304] flex-shrink-0" />
                 <span>{client}</span>
