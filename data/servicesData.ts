@@ -389,7 +389,7 @@ export const servicesData: ServiceItem[] = [
       { name: "Innova Crysta / Ertiga", type: "Custom Tour Vehicle", capacity: "6-7 Seats", price: "Custom Quote" },
     ],
     faqs: [
-      { question: "How do I request a custom travel package from Taxiyaa?", answer: "Simply call +91 9833867640 or click the WhatsApp Booking button to send your custom itinerary details." },
+      { question: "How do I request a custom travel package from Taxiyaa?", answer: "Simply call +91 8808527577 or click the WhatsApp Booking button to send your custom itinerary details." },
     ]
   }
 ];
@@ -403,5 +403,7 @@ export function getServiceBySlug(slug: string): ServiceItem | undefined {
       s.aliases.some((a) => a.toLowerCase() === normalized)
   );
 }
+
+
 
 

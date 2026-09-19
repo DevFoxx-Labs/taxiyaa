@@ -28,9 +28,12 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 text-[#FAB304] flex-shrink-0" />
                 <span>Kaveri Mahima Soc, Bangur Nagar, Goregaon West, Mumbai 400104</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-[#FAB304] flex-shrink-0" />
-                <a href="tel:+919833867640" className="hover:text-white font-bold">+91 98338 67640</a>
+              <div className="flex items-start gap-2">
+                <Phone className="w-4 h-4 text-[#FAB304] flex-shrink-0 mt-0.5" />
+                <div className="flex flex-col gap-0.5">
+                  <a href="tel:+916392767985" className="hover:text-white font-bold">+91 63927 67985 (Hotline / WhatsApp)</a>
+                  <a href="tel:+918808527577" className="hover:text-white font-bold">+91 88085 27577</a>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#FAB304] flex-shrink-0" />
@@ -86,13 +89,23 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-semibold text-slate-500 gap-4">
           <p>© {new Date().getFullYear()} Taxiyaa Travels. All rights reserved.</p>
           <div className="flex items-center gap-1 text-slate-400">
-            <span>Designed for 24/7 Premium Mobility & Outstation Cab Travel in Mumbai</span>
+            <span>Designed & Developed by</span>
+            <a
+              href="https://devfoxxlabs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#FAB304] font-extrabold hover:underline transition-colors"
+            >
+              DevFoxx Labs
+            </a>
           </div>
         </div>
       </div>
     </footer>
   );
 }
+
+
 
 
 

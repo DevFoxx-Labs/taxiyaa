@@ -37,9 +37,14 @@ export default function ContactLocations() {
               </div>
               <h3 className="text-lg font-black text-white uppercase">24/7 Booking Hotline</h3>
               <p className="text-xs text-slate-300 font-medium">Call for instant cab dispatch & outstation quotes.</p>
-              <a href="tel:+919833867640" className="text-xl font-black text-[#FAB304] block hover:underline">
-                +91 98338 67640
-              </a>
+              <div className="space-y-1">
+                <a href="tel:+916392767985" className="text-xl font-black text-[#FAB304] block hover:underline">
+                  +91 63927 67985 (Primary / WhatsApp)
+                </a>
+                <a href="tel:+918808527577" className="text-xl font-black text-slate-300 block hover:underline">
+                  +91 88085 27577
+                </a>
+              </div>
             </div>
 
             <div className="card-nova p-6 space-y-3">
@@ -52,7 +57,7 @@ export default function ContactLocations() {
               </p>
               <div className="pt-2">
                 <a
-                  href="https://wa.me/919833867640?text=Hello%20Taxiyaa%20I%20have%20an%20enquiry"
+                  href="https://wa.me/916392767985?text=Hello%20Taxiyaa%20I%20have%20an%20enquiry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-nova-neon inline-flex items-center gap-2 px-5 py-2.5 text-xs uppercase font-extrabold"
@@ -109,6 +114,8 @@ export default function ContactLocations() {
     </section>
   );
 }
+
+
 
 
 

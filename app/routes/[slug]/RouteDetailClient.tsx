@@ -57,7 +57,7 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
                 <ChevronRight className="w-4 h-4 stroke-[3]" />
               </button>
               <a
-                href="tel:+919833867640"
+                href="tel:+916392767985"
                 className="px-6 py-4 rounded-lg border border-[#1e222d] bg-[#13151b] text-slate-200 text-xs font-bold uppercase hover:border-[#FAB304] transition-colors flex items-center gap-2"
               >
                 <Phone className="w-4 h-4 text-[#FAB304]" />
@@ -194,11 +194,11 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
 
                 <div className="pt-2 text-center">
                   <a
-                    href="tel:+919833867640"
+                    href="tel:+916392767985"
                     className="text-xs font-bold text-slate-300 hover:text-[#FAB304] flex items-center justify-center gap-1.5"
                   >
                     <Phone className="w-3.5 h-3.5 text-[#FAB304]" />
-                    <span>Call Hotline: +91 98338 67640</span>
+                    <span>Call Hotline: +91 88085 27577</span>
                   </a>
                 </div>
               </div>
@@ -218,6 +218,8 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
     </main>
   );
 }
+
+
 
 
 

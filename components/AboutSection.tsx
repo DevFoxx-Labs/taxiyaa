@@ -76,11 +76,11 @@ export default function AboutSection() {
             {/* CTA */}
             <div className="pt-4 flex items-center gap-4">
               <a
-                href="tel:+919833867640"
+                href="tel:+916392767985"
                 className="btn-nova-neon px-6 py-3.5 text-xs uppercase font-extrabold flex items-center gap-2"
               >
                 <Phone className="w-4 h-4" />
-                <span>Call +91 98338 67640</span>
+                <span>Call +91 88085 27577</span>
               </a>
             </div>
           </div>
@@ -89,6 +89,8 @@ export default function AboutSection() {
     </section>
   );
 }
+
+
 
 
 

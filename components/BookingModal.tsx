@@ -34,7 +34,7 @@ export default function BookingModal({
       message || "None"
     }`;
 
-    window.open(`https://wa.me/919833867640?text=${encodeURIComponent(text)}`, "_blank");
+    window.open(`https://wa.me/916392767985?text=${encodeURIComponent(text)}`, "_blank");
     setSubmitted(true);
   };
 
@@ -70,7 +70,7 @@ export default function BookingModal({
                 </div>
                 <h3 className="text-2xl font-black text-white uppercase">Enquiry Sent Successfully!</h3>
                 <p className="text-sm text-slate-300 font-medium">
-                  Your inquiry has been formatted and redirected to our WhatsApp dispatch team (`+91 9833867640`). We will get back to you immediately!
+                  Your inquiry has been formatted and redirected to our WhatsApp dispatch team (`+91 6392767985`). We will get back to you immediately!
                 </p>
                 <button
                   onClick={() => {
@@ -238,7 +238,7 @@ export default function BookingModal({
                     className="btn-nova-neon w-full flex items-center justify-center gap-2 py-3.5 px-6 uppercase text-xs font-black tracking-wider cursor-pointer"
                   >
                     <Send className="w-4 h-4 fill-[#0b0c10]" />
-                    <span>Send to WhatsApp (+91 9833867640)</span>
+                    <span>Send to WhatsApp (+91 6392767985)</span>
                   </button>
                 </form>
               </div>
@@ -249,6 +249,8 @@ export default function BookingModal({
     </AnimatePresence>
   );
 }
+
+
 
 
 

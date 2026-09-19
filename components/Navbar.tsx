@@ -54,13 +54,20 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
             </span>
             <span className="hidden sm:inline text-slate-400">CSMIA Airport Drops • Intercity Outstation Cabs • Luxury Force Urbania</span>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <a
-              href="tel:+919833867640"
+              href="tel:+916392767985"
               className="flex items-center gap-1.5 text-slate-200 hover:text-[#FAB304] transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#FAB304]" />
-              <span className="font-bold">+91 98338 67640</span>
+              <span className="font-bold">+91 63927 67985</span>
+            </a>
+            <span className="text-slate-600">|</span>
+            <a
+              href="tel:+918808527577"
+              className="flex items-center gap-1.5 text-slate-200 hover:text-[#FAB304] transition-colors"
+            >
+              <span className="font-bold">+91 88085 27577</span>
             </a>
           </div>
         </div>
@@ -173,7 +180,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
           {/* CTA Action Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+919833867640"
+              href="tel:+916392767985"
               className="px-4 py-2.5 rounded-lg border border-[#1e222d] bg-[#13151b] text-slate-200 text-xs font-bold hover:border-[#FAB304] transition-colors flex items-center gap-2"
             >
               <Phone className="w-3.5 h-3.5 text-[#FAB304]" />
@@ -231,11 +238,11 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
           </div>
           <div className="pt-2 border-t border-[#1e222d] flex flex-col gap-2">
             <a
-              href="tel:+919833867640"
+              href="tel:+916392767985"
               className="w-full text-center py-3 rounded-lg border border-[#1e222d] bg-[#0b0c10] text-slate-200 text-sm font-bold flex items-center justify-center gap-2"
             >
               <Phone className="w-4 h-4 text-[#FAB304]" />
-              <span>Call +91 98338 67640</span>
+              <span>Call +91 63927 67985</span>
             </a>
           </div>
         </div>
@@ -243,6 +250,8 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
     </header>
   );
 }
+
+
 
 
 

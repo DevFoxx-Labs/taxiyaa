@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Taxiyaa Goregaon West, Mumbai",
   },
   description:
-    "Taxiyaa provides top-rated 24/7 Car Rentals, Outstation Taxis to Pune, Lonavala, Nashik & Goa, CSMIA Airport Transfers, and Luxury Tempo Travellers in Goregaon West & Mumbai. Rated 4.9★ on Google & Justdial. Call +91 98338 67640.",
+    "Taxiyaa provides top-rated 24/7 Car Rentals, Outstation Taxis to Pune, Lonavala, Nashik & Goa, CSMIA Airport Transfers, and Luxury Tempo Travellers in Goregaon West & Mumbai. Rated 4.9★ on Google & Justdial. Call +91 88085 27577.",
   keywords: [
     "Taxiyaa",
     "Taxiyaa Mumbai",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: "Taxiyaa | 24/7 Car Rentals, Outstation Cabs & Airport Transfers Mumbai",
     description:
-      "Top-rated 24/7 Car Rentals, Outstation Cabs to Pune & Goa, CSMIA Airport Transfers in Goregaon West & Mumbai. Call +91 98338 67640.",
+      "Top-rated 24/7 Car Rentals, Outstation Cabs to Pune & Goa, CSMIA Airport Transfers in Goregaon West & Mumbai. Call +91 88085 27577.",
     siteName: "Taxiyaa",
     images: ["/taxyiaa-logo-light.webp"],
   },
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Taxiyaa | 24/7 Car Rentals & Outstation Cabs Mumbai",
     description:
-      "Top-rated 24/7 Car Rentals, Outstation Cabs, Airport Transfers in Goregaon West & Mumbai. Call +91 98338 67640.",
+      "Top-rated 24/7 Car Rentals, Outstation Cabs, Airport Transfers in Goregaon West & Mumbai. Call +91 88085 27577.",
     images: ["/taxyiaa-logo-light.webp"],
   },
 };
@@ -109,7 +109,7 @@ export default function RootLayout({
         image: `${siteUrl}/taxyiaa-logo-light.webp`,
         description:
           "Taxiyaa provides top-rated 24/7 Car Rentals, Outstation Taxis to Pune, Lonavala, Nashik & Goa, CSMIA Airport Transfers, and Luxury Tempo Travellers in Goregaon West & Mumbai.",
-        telephone: "+91-9833867640",
+        telephone: ["+91-8808527577", "+91-6392767985"],
         email: "support@taxiyaa.com",
         priceRange: "₹₹",
         address: {
@@ -150,7 +150,7 @@ export default function RootLayout({
         contactPoint: [
           {
             "@type": "ContactPoint",
-            telephone: "+91-9833867640",
+            telephone: "+91-8808527577",
             contactType: "customer service",
             availableLanguage: ["English", "Hindi", "Marathi"],
             areaServed: "IN",
@@ -186,6 +186,8 @@ export default function RootLayout({
     </html>
   );
 }
+
+
 
 
 

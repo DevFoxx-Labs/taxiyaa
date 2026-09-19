@@ -11,7 +11,7 @@ export default function FloatingWhatsApp({ onOpenBookingModal }: FloatingWhatsAp
     <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
       {/* Phone Call Trigger */}
       <a
-        href="tel:+919833867640"
+        href="tel:+916392767985"
         className="w-12 h-12 rounded-full bg-[#13151b] border-2 border-[#1e222d] text-[#FAB304] flex items-center justify-center shadow-xl hover:scale-110 transition-transform"
         title="Call Taxiyaa Hotline"
         aria-label="Call Taxiyaa Hotline"
@@ -21,7 +21,7 @@ export default function FloatingWhatsApp({ onOpenBookingModal }: FloatingWhatsAp
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/919833867640?text=Hello%20Taxiyaa!%20I%20want%20to%20book%20a%20cab."
+        href="https://wa.me/916392767985?text=Hello%20Taxiyaa!%20I%20want%20to%20book%20a%20cab."
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform relative group"
@@ -36,6 +36,8 @@ export default function FloatingWhatsApp({ onOpenBookingModal }: FloatingWhatsAp
     </div>
   );
 }
+
+
 
 
 
