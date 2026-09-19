@@ -34,7 +34,7 @@ export default function BookingProcess() {
     <section className="py-20 bg-nova-dark relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-2">
-          <span className="text-xs font-black tracking-[0.2em] text-[#b5f63d] uppercase">
+          <span className="text-xs font-black tracking-[0.2em] text-[#FAB304] uppercase">
             HOW IT WORKS
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">
@@ -52,7 +52,7 @@ export default function BookingProcess() {
               <div key={idx} className="card-nova p-6 relative flex flex-col justify-between group">
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <div className="w-12 h-12 rounded-xl bg-[#0b0c10] border border-[#1e222d] text-[#b5f63d] flex items-center justify-center font-bold group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-xl bg-[#0b0c10] border border-[#1e222d] text-[#FAB304] flex items-center justify-center font-bold group-hover:scale-110 transition-transform">
                       <IconComponent className="w-6 h-6" />
                     </div>
                     <span className="text-2xl font-black text-slate-700 font-mono">{item.step}</span>
@@ -68,3 +68,7 @@ export default function BookingProcess() {
     </section>
   );
 }
+
+
+
+

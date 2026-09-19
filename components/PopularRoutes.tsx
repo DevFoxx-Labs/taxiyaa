@@ -19,7 +19,7 @@ export default function PopularRoutes({ onOpenBookingModal }: PopularRoutesProps
     <section id="routes" className="py-20 bg-nova-dark relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <span className="text-xs font-black tracking-[0.2em] text-[#b5f63d] uppercase">
+          <span className="text-xs font-black tracking-[0.2em] text-[#FAB304] uppercase">
             INTERCITY & PILGRIMAGE NETWORK
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight">
@@ -43,7 +43,7 @@ export default function PopularRoutes({ onOpenBookingModal }: PopularRoutesProps
                 onClick={() => setFilter(tab.id)}
                 className={`px-4 py-2 rounded-xl text-xs font-bold uppercase transition-all ${
                   filter === tab.id
-                    ? "bg-[#b5f63d] text-[#0b0c10] shadow-md"
+                    ? "bg-[#FAB304] text-[#0b0c10] shadow-md"
                     : "bg-[#13151b] border border-[#1e222d] text-slate-400 hover:text-white"
                 }`}
               >
@@ -58,18 +58,18 @@ export default function PopularRoutes({ onOpenBookingModal }: PopularRoutesProps
             <div key={r.id} className="card-nova p-5 flex flex-col justify-between group">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="px-2.5 py-1 rounded-full bg-[#0b0c10] border border-[#1e222d] text-[#b5f63d] text-[10px] font-extrabold uppercase">
+                  <span className="px-2.5 py-1 rounded-full bg-[#0b0c10] border border-[#1e222d] text-[#FAB304] text-[10px] font-extrabold uppercase">
                     {r.category}
                   </span>
                   <div className="flex items-center gap-1 text-slate-400 text-xs font-bold">
-                    <Clock className="w-3.5 h-3.5 text-[#b5f63d]" />
+                    <Clock className="w-3.5 h-3.5 text-[#FAB304]" />
                     <span>{r.duration}</span>
                   </div>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-black text-white uppercase group-hover:text-[#b5f63d] transition-colors flex items-center gap-1.5">
-                    <Car className="w-4 h-4 text-[#b5f63d]" /> {r.title}
+                  <h3 className="text-lg font-black text-white uppercase group-hover:text-[#FAB304] transition-colors flex items-center gap-1.5">
+                    <Car className="w-4 h-4 text-[#FAB304]" /> {r.title}
                   </h3>
                   <p className="text-xs text-slate-400 font-semibold mt-1">Approx distance: {r.distance}</p>
                 </div>
@@ -78,7 +78,7 @@ export default function PopularRoutes({ onOpenBookingModal }: PopularRoutesProps
                   <span className="text-[10px] font-extrabold uppercase text-slate-500 block">Highlights</span>
                   <div className="flex flex-wrap gap-1">
                     {r.keyAttractions.slice(0, 3).map((spot, sIdx) => (
-                      <span key={sIdx} className="px-2 py-0.5 rounded-md bg-[#0b0c10] text-[10px] font-semibold text-slate-300">
+                      <span key={sIdx} className="px-2 py-0.5 rounded-lg bg-[#0b0c10] text-[10px] font-semibold text-slate-300">
                         {spot}
                       </span>
                     ))}
@@ -87,28 +87,22 @@ export default function PopularRoutes({ onOpenBookingModal }: PopularRoutesProps
               </div>
 
               <div className="pt-4 mt-4 border-t border-[#1e222d] flex items-center justify-between">
-                <div>
-                  <span className="text-[10px] font-bold text-slate-500 uppercase block">Starting Fare</span>
-                  <span className="text-lg font-black text-[#b5f63d]">{r.startingFare}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Link
-                    href={`/routes/${r.slug}`}
-                    className="text-xs font-extrabold text-slate-300 hover:text-[#b5f63d] flex items-center gap-1 uppercase"
+                <Link
+                  href={`/routes/${r.slug}`}
+                  className="text-xs font-extrabold text-slate-300 hover:text-[#FAB304] flex items-center gap-1 uppercase"
+                >
+                  <span>View Details</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-[#FAB304]" />
+                </Link>
+                {onOpenBookingModal && (
+                  <button
+                    onClick={() => onOpenBookingModal(`Outstation - ${r.title}`)}
+                    className="btn-nova-neon px-4 py-2 text-xs uppercase font-extrabold flex items-center gap-1"
                   >
-                    <span>Details</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#b5f63d]" />
-                  </Link>
-                  {onOpenBookingModal && (
-                    <button
-                      onClick={() => onOpenBookingModal(`Outstation - ${r.title}`)}
-                      className="btn-nova-neon px-3.5 py-1.5 text-[11px] uppercase font-extrabold flex items-center gap-1"
-                    >
-                      <span>Book</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </button>
-                  )}
-                </div>
+                    <span>Book Now</span>
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                )}
               </div>
             </div>
           ))}
@@ -117,3 +111,7 @@ export default function PopularRoutes({ onOpenBookingModal }: PopularRoutesProps
     </section>
   );
 }
+
+
+
+

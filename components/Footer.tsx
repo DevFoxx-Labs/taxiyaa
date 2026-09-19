@@ -25,15 +25,15 @@ export default function Footer() {
 
             <div className="space-y-2 text-xs font-semibold text-slate-300">
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-[#b5f63d] flex-shrink-0" />
+                <MapPin className="w-4 h-4 text-[#FAB304] flex-shrink-0" />
                 <span>Kaveri Mahima Soc, Bangur Nagar, Goregaon West, Mumbai 400104</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-[#b5f63d] flex-shrink-0" />
+                <Phone className="w-4 h-4 text-[#FAB304] flex-shrink-0" />
                 <a href="tel:+919833867640" className="hover:text-white font-bold">+91 98338 67640</a>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-[#b5f63d] flex-shrink-0" />
+                <Mail className="w-4 h-4 text-[#FAB304] flex-shrink-0" />
                 <span>support@taxiyaa.com</span>
               </div>
             </div>
@@ -43,13 +43,13 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <h3 className="text-xs font-black text-white uppercase tracking-widest">Quick Navigation</h3>
             <ul className="space-y-2.5 text-xs font-semibold">
-              <li><Link href="/" className="hover:text-[#b5f63d] transition-colors">Home</Link></li>
-              <li><a href="#services" className="hover:text-[#b5f63d] transition-colors">Services Catalog</a></li>
-              <li><a href="#fleet" className="hover:text-[#b5f63d] transition-colors">Sanitized Fleet</a></li>
-              <li><a href="#routes" className="hover:text-[#b5f63d] transition-colors">Outstation Routes</a></li>
-              <li><a href="#faqs" className="hover:text-[#b5f63d] transition-colors">FAQs & Rules</a></li>
-              <li><a href="#about" className="hover:text-[#b5f63d] transition-colors">About Us</a></li>
-              <li><a href="#contact" className="hover:text-[#b5f63d] transition-colors">Contact</a></li>
+              <li><Link href="/" className="hover:text-[#FAB304] transition-colors">Home</Link></li>
+              <li><a href="#services" className="hover:text-[#FAB304] transition-colors">Services Catalog</a></li>
+              <li><a href="#fleet" className="hover:text-[#FAB304] transition-colors">Sanitized Fleet</a></li>
+              <li><a href="#routes" className="hover:text-[#FAB304] transition-colors">Outstation Routes</a></li>
+              <li><a href="#faqs" className="hover:text-[#FAB304] transition-colors">FAQs & Rules</a></li>
+              <li><a href="#about" className="hover:text-[#FAB304] transition-colors">About Us</a></li>
+              <li><a href="#contact" className="hover:text-[#FAB304] transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -59,8 +59,8 @@ export default function Footer() {
             <ul className="space-y-2 text-xs font-semibold">
               {servicesData.slice(0, 7).map((s) => (
                 <li key={s.id}>
-                  <Link href={`/services/${s.slug}`} className="hover:text-[#b5f63d] transition-colors flex items-center gap-1">
-                    <span className="text-[#b5f63d] font-bold">•</span>
+                  <Link href={`/services/${s.slug}`} className="hover:text-[#FAB304] transition-colors flex items-center gap-1">
+                    <span className="text-[#FAB304] font-bold">•</span>
                     <span className="truncate">{s.title}</span>
                   </Link>
                 </li>
@@ -72,12 +72,12 @@ export default function Footer() {
           <div className="lg:col-span-3 space-y-4">
             <h3 className="text-xs font-black text-white uppercase tracking-widest">Outstation Taxi Drops</h3>
             <ul className="space-y-2 text-xs font-semibold">
-              <li><Link href="/routes/mumbai-to-pune-cab" className="hover:text-[#b5f63d] transition-colors">Mumbai to Pune Taxi Cab</Link></li>
-              <li><Link href="/routes/mumbai-to-lonavala-cab" className="hover:text-[#b5f63d] transition-colors">Mumbai to Lonavala Cab Service</Link></li>
-              <li><Link href="/routes/mumbai-to-nashik-taxi" className="hover:text-[#b5f63d] transition-colors">Mumbai to Nashik Outstation Cab</Link></li>
-              <li><Link href="/routes/mumbai-to-shirdi-taxi" className="hover:text-[#b5f63d] transition-colors">Mumbai to Shirdi Taxi Service</Link></li>
-              <li><Link href="/routes/mumbai-to-goa-outstation" className="hover:text-[#b5f63d] transition-colors">Mumbai to Goa Outstation Cab</Link></li>
-              <li><Link href="/routes/mumbai-to-ashtavinayak-tour" className="hover:text-[#b5f63d] transition-colors">Ashtavinayak Pilgrimage Yatra</Link></li>
+              <li><Link href="/routes/mumbai-to-pune-cab" className="hover:text-[#FAB304] transition-colors">Mumbai to Pune Taxi Cab</Link></li>
+              <li><Link href="/routes/mumbai-to-lonavala-cab" className="hover:text-[#FAB304] transition-colors">Mumbai to Lonavala Cab Service</Link></li>
+              <li><Link href="/routes/mumbai-to-nashik-taxi" className="hover:text-[#FAB304] transition-colors">Mumbai to Nashik Outstation Cab</Link></li>
+              <li><Link href="/routes/mumbai-to-shirdi-taxi" className="hover:text-[#FAB304] transition-colors">Mumbai to Shirdi Taxi Service</Link></li>
+              <li><Link href="/routes/mumbai-to-goa-outstation" className="hover:text-[#FAB304] transition-colors">Mumbai to Goa Outstation Cab</Link></li>
+              <li><Link href="/routes/mumbai-to-ashtavinayak-tour" className="hover:text-[#FAB304] transition-colors">Ashtavinayak Pilgrimage Yatra</Link></li>
             </ul>
           </div>
         </div>
@@ -93,3 +93,7 @@ export default function Footer() {
     </footer>
   );
 }
+
+
+
+

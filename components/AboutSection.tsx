@@ -18,10 +18,10 @@ export default function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b0c10] via-transparent to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#0b0c10]/90 backdrop-blur-md border border-[#1e222d] flex items-center justify-between">
                 <div>
-                  <span className="text-xs font-black text-[#b5f63d] uppercase tracking-wider block">HEADQUARTERS</span>
+                  <span className="text-xs font-black text-[#FAB304] uppercase tracking-wider block">HEADQUARTERS</span>
                   <span className="text-sm font-bold text-white">Goregaon West & Mumbai Suburbs</span>
                 </div>
-                <div className="w-10 h-10 rounded-lg bg-[#b5f63d]/10 text-[#b5f63d] flex items-center justify-center font-bold">
+                <div className="w-10 h-10 rounded-lg bg-[#FAB304]/10 text-[#FAB304] flex items-center justify-center font-bold">
                   <MapPin className="w-5 h-5" />
                 </div>
               </div>
@@ -33,7 +33,7 @@ export default function AboutSection() {
                 <span className="text-[11px] font-bold text-slate-400 uppercase block">Outstation Trips</span>
               </div>
               <div className="p-4 rounded-xl bg-[#0b0c10] border border-[#1e222d] text-center space-y-1">
-                <span className="text-3xl font-black text-[#b5f63d]">4.9 ★</span>
+                <span className="text-3xl font-black text-[#FAB304]">4.9 ★</span>
                 <span className="text-[11px] font-bold text-slate-400 uppercase block">Google Rating</span>
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function AboutSection() {
           {/* Right Column: Narrative Content */}
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-2">
-              <span className="text-xs font-black tracking-[0.2em] text-[#b5f63d] uppercase">
+              <span className="text-xs font-black tracking-[0.2em] text-[#FAB304] uppercase">
                 ABOUT TAXIYAA TRAVELS
               </span>
               <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight leading-snug">
@@ -67,7 +67,7 @@ export default function AboutSection() {
                 "Intercity Permits for Maharashtra & Goa Travel",
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2 text-xs font-bold text-slate-200">
-                  <ShieldCheck className="w-4 h-4 text-[#b5f63d] flex-shrink-0" />
+                  <ShieldCheck className="w-4 h-4 text-[#FAB304] flex-shrink-0" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -89,3 +89,7 @@ export default function AboutSection() {
     </section>
   );
 }
+
+
+
+

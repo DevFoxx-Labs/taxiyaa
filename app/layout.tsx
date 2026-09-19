@@ -180,9 +180,13 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="antialiased min-h-screen flex flex-col bg-[#0b0c10] text-slate-100 selection:bg-[#b5f63d] selection:text-[#0b0c10]">
+      <body className="antialiased min-h-screen flex flex-col bg-[#0b0c10] text-slate-100 selection:bg-[#FAB304] selection:text-[#0b0c10]">
         {children}
       </body>
     </html>
   );
 }
+
+
+
+

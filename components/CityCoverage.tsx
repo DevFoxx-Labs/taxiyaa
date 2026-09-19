@@ -22,7 +22,7 @@ export default function CityCoverage() {
     <section className="py-20 bg-nova-dark border-t border-[#1e222d] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#13151b] border border-[#1e222d] text-[#b5f63d] text-xs font-black uppercase">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#13151b] border border-[#1e222d] text-[#FAB304] text-xs font-black uppercase">
             <Globe className="w-4 h-4" /> INTERCITY NETWORK
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight">
@@ -37,14 +37,14 @@ export default function CityCoverage() {
           {regions.map((reg, idx) => (
             <div key={idx} className="card-nova p-6 space-y-4">
               <div className="flex items-center gap-2 border-b border-[#1e222d] pb-3">
-                <MapPin className="w-5 h-5 text-[#b5f63d]" />
+                <MapPin className="w-5 h-5 text-[#FAB304]" />
                 <h3 className="text-lg font-black text-white uppercase tracking-tight">{reg.region}</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-2">
                 {reg.cities.map((city, cIdx) => (
                   <div key={cIdx} className="p-2.5 rounded-lg bg-[#0b0c10] border border-[#1e222d] flex items-center gap-1.5 text-xs font-bold text-slate-300">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#b5f63d] flex-shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#FAB304] flex-shrink-0" />
                     <span className="truncate">{city}</span>
                   </div>
                 ))}
@@ -56,3 +56,7 @@ export default function CityCoverage() {
     </section>
   );
 }
+
+
+
+

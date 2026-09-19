@@ -253,7 +253,7 @@ export const servicesData: ServiceItem[] = [
     badge: "Travel Assistance",
     description: "Instant domestic & international air ticket booking support with discounted corporate fares and airport cab bundles.",
     longDescription: "Simplify your air travel with Taxiyaa's ticketing desk. We assist individual travelers, families, and corporate delegations with booking domestic flights (IndiGo, Air India, Vistara, Akasa) and international routes at competitive prices.",
-    heroImage: "https://images.unsplash.com/photo-1540339832862-47459980783b?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/flight_booking.jpg",
     keyFeatures: [
       "Domestic & International Flight Reservations",
       "Group Fares & Exclusive Corporate Discounts",
@@ -403,3 +403,4 @@ export function getServiceBySlug(slug: string): ServiceItem | undefined {
       s.aliases.some((a) => a.toLowerCase() === normalized)
   );
 }
+

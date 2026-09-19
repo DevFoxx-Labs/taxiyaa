@@ -59,7 +59,7 @@ export default function FAQSection() {
     <section id="faqs" className="py-20 bg-nova-dark border-t border-[#1e222d] relative">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#13151b] border border-[#1e222d] text-[#b5f63d] text-xs font-black uppercase">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#13151b] border border-[#1e222d] text-[#FAB304] text-xs font-black uppercase">
             <HelpCircle className="w-4 h-4" /> FREQUENTLY ASKED QUESTIONS
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight">
@@ -83,7 +83,7 @@ export default function FAQSection() {
                   className="w-full p-5 text-left flex items-center justify-between gap-4 focus:outline-none"
                 >
                   <div className="flex items-center gap-3">
-                    <span className="px-2.5 py-1 rounded-md bg-[#0b0c10] border border-[#1e222d] text-[#b5f63d] text-[10px] font-black uppercase">
+                    <span className="px-2.5 py-1 rounded-lg bg-[#0b0c10] border border-[#1e222d] text-[#FAB304] text-[10px] font-black uppercase">
                       {faq.category}
                     </span>
                     <h3 className="text-base font-black text-white uppercase tracking-tight">
@@ -91,7 +91,7 @@ export default function FAQSection() {
                     </h3>
                   </div>
                   <ChevronDown
-                    className={`w-5 h-5 text-[#b5f63d] flex-shrink-0 transition-transform duration-300 ${
+                    className={`w-5 h-5 text-[#FAB304] flex-shrink-0 transition-transform duration-300 ${
                       isOpen ? "rotate-180" : ""
                     }`}
                   />
@@ -110,3 +110,7 @@ export default function FAQSection() {
     </section>
   );
 }
+
+
+
+

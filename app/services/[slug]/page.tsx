@@ -48,3 +48,7 @@ export default async function ServicePage({
 
   return <ServiceDetailClient service={service} />;
 }
+
+
+
+

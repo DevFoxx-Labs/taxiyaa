@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import BookingModal from "@/components/BookingModal";
 import { RouteItem } from "@/data/routesData";
-import { MapPin, Clock, ShieldCheck, CheckCircle2, ChevronRight, Phone, ArrowLeft, Car, HelpCircle, Compass } from "lucide-react";
+import { MapPin, Clock, ShieldCheck, ChevronRight, Phone, ArrowLeft, Car, HelpCircle, Compass } from "lucide-react";
 
 interface RouteDetailClientProps {
   routeItem: RouteItem;
@@ -17,7 +17,7 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <main className="min-h-screen bg-[#0b0c10] text-slate-100 flex flex-col selection:bg-[#b5f63d] selection:text-[#0b0c10]">
+    <main className="min-h-screen bg-[#0b0c10] text-slate-100 flex flex-col selection:bg-[#FAB304] selection:text-[#0b0c10]">
       <Navbar onOpenBookingModal={() => setIsModalOpen(true)} />
 
       {/* Hero Header */}
@@ -27,20 +27,20 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
           <div className="space-y-4">
             <Link
               href="/#routes"
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#b5f63d] hover:underline uppercase tracking-wider"
+              className="inline-flex items-center gap-2 text-xs font-bold text-[#FAB304] hover:underline uppercase tracking-wider"
             >
               <ArrowLeft className="w-4 h-4" /> Back to All Routes
             </Link>
 
             <div className="flex flex-wrap items-center gap-3">
-              <span className="px-3.5 py-1 rounded-full bg-[#13151b] border border-[#1e222d] text-[#b5f63d] text-xs font-black uppercase">
+              <span className="px-3.5 py-1 rounded-full bg-[#13151b] border border-[#1e222d] text-[#FAB304] text-xs font-black uppercase">
                 {routeItem.category} Circuit
               </span>
               <span className="text-xs font-bold text-slate-400 flex items-center gap-1">
-                <Clock className="w-3.5 h-3.5 text-[#b5f63d]" /> {routeItem.duration}
+                <Clock className="w-3.5 h-3.5 text-[#FAB304]" /> {routeItem.duration}
               </span>
               <span className="text-xs font-bold text-slate-400 flex items-center gap-1">
-                <MapPin className="w-3.5 h-3.5 text-[#b5f63d]" /> {routeItem.distance}
+                <MapPin className="w-3.5 h-3.5 text-[#FAB304]" /> {routeItem.distance}
               </span>
             </div>
 
@@ -58,9 +58,9 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
               </button>
               <a
                 href="tel:+919833867640"
-                className="px-6 py-4 rounded-xl border border-[#1e222d] bg-[#13151b] text-slate-200 text-xs font-bold uppercase hover:border-[#b5f63d] transition-colors flex items-center gap-2"
+                className="px-6 py-4 rounded-lg border border-[#1e222d] bg-[#13151b] text-slate-200 text-xs font-bold uppercase hover:border-[#FAB304] transition-colors flex items-center gap-2"
               >
-                <Phone className="w-4 h-4 text-[#b5f63d]" />
+                <Phone className="w-4 h-4 text-[#FAB304]" />
                 <span>Call Hotline</span>
               </a>
             </div>
@@ -94,7 +94,7 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {routeItem.highlights.map((h, idx) => (
                     <div key={idx} className="p-4 rounded-xl bg-[#0b0c10] border border-[#1e222d] flex items-start gap-3">
-                      <ShieldCheck className="w-5 h-5 text-[#b5f63d] flex-shrink-0 mt-0.5" />
+                      <ShieldCheck className="w-5 h-5 text-[#FAB304] flex-shrink-0 mt-0.5" />
                       <span className="text-xs font-bold text-slate-200">{h}</span>
                     </div>
                   ))}
@@ -104,7 +104,7 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
               {/* Key Attractions */}
               <div className="space-y-4">
                 <h2 className="text-2xl font-black text-white uppercase flex items-center gap-2">
-                  <Compass className="w-6 h-6 text-[#b5f63d]" /> Key Sightseeing & Stopovers
+                  <Compass className="w-6 h-6 text-[#FAB304]" /> Key Sightseeing & Stopovers
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                   {routeItem.keyAttractions.map((spot, idx) => (
@@ -118,20 +118,20 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
               {/* Vehicle Options & Fare Rates */}
               <div className="space-y-4">
                 <h2 className="text-2xl font-black text-white uppercase flex items-center gap-2">
-                  <Car className="w-6 h-6 text-[#b5f63d]" /> Recommended Vehicles & Fare Table
+                  <Car className="w-6 h-6 text-[#FAB304]" /> Recommended Fleet Options
                 </h2>
                 <div className="bg-[#0b0c10] border border-[#1e222d] rounded-2xl overflow-hidden">
                   <div className="grid grid-cols-12 bg-[#13151b] p-3 text-xs font-black uppercase text-slate-300 border-b border-[#1e222d]">
-                    <div className="col-span-5">Vehicle Name</div>
+                    <div className="col-span-6">Vehicle Name</div>
                     <div className="col-span-3">Seating Type</div>
-                    <div className="col-span-4 text-right">Route Fare</div>
+                    <div className="col-span-3 text-right">Dispatch Status</div>
                   </div>
                   <div className="divide-y divide-[#1e222d]">
                     {routeItem.recommendedFleet.map((f, idx) => (
                       <div key={idx} className="grid grid-cols-12 p-3.5 text-xs items-center">
-                        <div className="col-span-5 font-black text-white">{f.vehicle}</div>
+                        <div className="col-span-6 font-black text-white">{f.vehicle}</div>
                         <div className="col-span-3 font-semibold text-slate-300">{f.type}</div>
-                        <div className="col-span-4 text-right font-black text-[#b5f63d]">{f.fare}</div>
+                        <div className="col-span-3 text-right font-bold text-[#FAB304]">Ready for Dispatch</div>
                       </div>
                     ))}
                   </div>
@@ -142,7 +142,7 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
               {routeItem.faqs && routeItem.faqs.length > 0 && (
                 <div className="space-y-4 pt-4 border-t border-[#1e222d]">
                   <h2 className="text-2xl font-black text-white uppercase flex items-center gap-2">
-                    <HelpCircle className="w-6 h-6 text-[#b5f63d]" /> Route FAQs
+                    <HelpCircle className="w-6 h-6 text-[#FAB304]" /> Route FAQs
                   </h2>
                   <div className="space-y-3">
                     {routeItem.faqs.map((faq, idx) => (
@@ -160,7 +160,7 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
             <div className="lg:col-span-4 space-y-6">
               <div className="card-nova p-6 space-y-6 sticky top-28">
                 <div className="space-y-2">
-                  <span className="text-[10px] font-black tracking-widest text-[#b5f63d] uppercase">
+                  <span className="text-[10px] font-black tracking-widest text-[#FAB304] uppercase">
                     INSTANT ROUTE BOOKING
                   </span>
                   <h3 className="text-xl font-black text-white uppercase">{routeItem.from} ➔ {routeItem.to}</h3>
@@ -172,7 +172,7 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
                 <div className="p-4 rounded-xl bg-[#0b0c10] border border-[#1e222d] space-y-2">
                   <div className="flex items-center justify-between text-xs font-bold text-slate-300">
                     <span>Starting Fare</span>
-                    <span className="text-[#b5f63d] font-black text-sm">{routeItem.startingFare}</span>
+                    <span className="text-[#FAB304] font-black text-sm">{routeItem.startingFare}</span>
                   </div>
                   <div className="flex items-center justify-between text-xs font-bold text-slate-300">
                     <span>Est. Distance</span>
@@ -195,9 +195,9 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
                 <div className="pt-2 text-center">
                   <a
                     href="tel:+919833867640"
-                    className="text-xs font-bold text-slate-300 hover:text-[#b5f63d] flex items-center justify-center gap-1.5"
+                    className="text-xs font-bold text-slate-300 hover:text-[#FAB304] flex items-center justify-center gap-1.5"
                   >
-                    <Phone className="w-3.5 h-3.5 text-[#b5f63d]" />
+                    <Phone className="w-3.5 h-3.5 text-[#FAB304]" />
                     <span>Call Hotline: +91 98338 67640</span>
                   </a>
                 </div>
@@ -218,3 +218,7 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
     </main>
   );
 }
+
+
+
+

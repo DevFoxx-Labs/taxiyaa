@@ -86,7 +86,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
     <section id="fleet" className="py-20 bg-[#13151b] border-t border-[#1e222d] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-black tracking-[0.2em] text-[#b5f63d] uppercase">
+          <span className="text-xs font-black tracking-[0.2em] text-[#FAB304] uppercase">
             OUR SANITIZED FLEET
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight">
@@ -103,7 +103,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
               <div className="relative h-44 border-b border-[#1e222d]">
                 <img src={v.image} alt={v.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#13151b] via-[#13151b]/40 to-transparent" />
-                <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#0b0c10]/90 text-[#b5f63d] text-[10px] font-black uppercase border border-[#1e222d]">
+                <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#0b0c10]/90 text-[#FAB304] text-[10px] font-black uppercase border border-[#1e222d]">
                   {v.category}
                 </span>
               </div>
@@ -112,24 +112,20 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
                 <div className="space-y-2">
                   <h3 className="text-lg font-black text-white uppercase">{v.name}</h3>
                   <div className="flex items-center justify-between text-xs font-bold text-slate-300">
-                    <span className="flex items-center gap-1"><Users className="w-3.5 h-3.5 text-[#b5f63d]" /> {v.capacity}</span>
-                    <span className="flex items-center gap-1"><Briefcase className="w-3.5 h-3.5 text-[#b5f63d]" /> {v.luggage}</span>
+                    <span className="flex items-center gap-1"><Users className="w-3.5 h-3.5 text-[#FAB304]" /> {v.capacity}</span>
+                    <span className="flex items-center gap-1"><Briefcase className="w-3.5 h-3.5 text-[#FAB304]" /> {v.luggage}</span>
                   </div>
                   <p className="text-[11px] text-slate-400 font-medium pt-1 line-clamp-2">{v.ideal}</p>
                 </div>
 
-                <div className="pt-3 border-t border-[#1e222d] flex items-center justify-between">
-                  <div>
-                    <span className="text-[10px] font-bold text-slate-500 block uppercase">Starting Fare</span>
-                    <span className="text-sm font-black text-[#b5f63d]">{v.rate}</span>
-                  </div>
+                <div className="pt-3 border-t border-[#1e222d] flex items-center justify-end">
                   {onOpenBookingModal && (
                     <button
                       onClick={() => onOpenBookingModal(`Vehicle - ${v.name}`)}
-                      className="btn-nova-neon px-3.5 py-1.5 text-[11px] uppercase font-extrabold flex items-center gap-1"
+                      className="btn-nova-neon px-4 py-2 text-xs uppercase font-extrabold flex items-center gap-1"
                     >
-                      <span>Book</span>
-                      <ChevronRight className="w-3 h-3" />
+                      <span>Book Now</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
                     </button>
                   )}
                 </div>
@@ -141,3 +137,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
     </section>
   );
 }
+
+
+
+

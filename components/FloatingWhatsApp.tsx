@@ -12,7 +12,7 @@ export default function FloatingWhatsApp({ onOpenBookingModal }: FloatingWhatsAp
       {/* Phone Call Trigger */}
       <a
         href="tel:+919833867640"
-        className="w-12 h-12 rounded-full bg-[#13151b] border-2 border-[#1e222d] text-[#b5f63d] flex items-center justify-center shadow-xl hover:scale-110 transition-transform"
+        className="w-12 h-12 rounded-full bg-[#13151b] border-2 border-[#1e222d] text-[#FAB304] flex items-center justify-center shadow-xl hover:scale-110 transition-transform"
         title="Call Taxiyaa Hotline"
         aria-label="Call Taxiyaa Hotline"
       >
@@ -36,3 +36,7 @@ export default function FloatingWhatsApp({ onOpenBookingModal }: FloatingWhatsAp
     </div>
   );
 }
+
+
+
+

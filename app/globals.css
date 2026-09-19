@@ -3,7 +3,7 @@
 :root {
   --background: #0b0c10;
   --foreground: #f8fafc;
-  --color-neon: #b5f63d;
+  --color-teal: #FAB304;
   --color-dark-bg: #0b0c10;
   --color-card-bg: #13151b;
   --color-card-border: #1e222d;
@@ -31,32 +31,35 @@ body {
   border-color: #1e222d;
 }
 
-.text-nova-neon {
-  color: #b5f63d;
+.text-nova-neon,
+.text-nova-teal {
+  color: #FAB304;
 }
 
-.bg-nova-neon {
-  background-color: #b5f63d;
+.bg-nova-neon,
+.bg-nova-teal {
+  background-color: #FAB304;
 }
 
-.border-nova-neon {
-  border-color: #b5f63d;
+.border-nova-neon,
+.border-nova-teal {
+  border-color: #FAB304;
 }
 
-/* Neon Button (.btn-nova-neon) */
+/* Electric Teal Button (.btn-nova-neon) */
 .btn-nova-neon {
-  background-color: #b5f63d;
+  background-color: #FAB304;
   color: #0b0c10;
   font-weight: 800;
-  border-radius: 0.75rem;
+  border-radius: 0.625rem;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 10px 25px -5px rgba(181, 246, 61, 0.3);
+  box-shadow: 0 10px 25px -5px rgba(250, 179, 4, 0.35);
 }
 
 .btn-nova-neon:hover {
-  background-color: #c4f85e;
+  background-color: #ffc229;
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 15px 35px -5px rgba(181, 246, 61, 0.5);
+  box-shadow: 0 15px 35px -5px rgba(250, 179, 4, 0.55);
 }
 
 /* Glassmorphism Cards (.card-nova) */
@@ -68,16 +71,16 @@ body {
 }
 
 .card-nova:hover {
-  border-color: rgba(181, 246, 61, 0.4);
+  border-color: rgba(250, 179, 4, 0.4);
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 20px 0 rgba(181, 246, 61, 0.15);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 20px 0 rgba(250, 179, 4, 0.15);
 }
 
 .card-nova-featured {
   background-color: #13151b;
-  border: 2px solid #b5f63d;
+  border: 2px solid #FAB304;
   border-radius: 1.25rem;
-  box-shadow: 0 0 30px rgba(181, 246, 61, 0.2);
+  box-shadow: 0 0 30px rgba(250, 179, 4, 0.2);
 }
 
 /* Grid & Text Gradient Accents */
@@ -90,7 +93,7 @@ body {
 }
 
 .neon-text-gradient {
-  background: linear-gradient(135deg, #b5f63d 0%, #a3e635 50%, #2dd4bf 100%);
+  background: linear-gradient(135deg, #FAB304 0%, #f59e0b 50%, #eab308 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -123,5 +126,9 @@ body {
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #b5f63d;
+  background: #FAB304;
 }
+
+
+
+

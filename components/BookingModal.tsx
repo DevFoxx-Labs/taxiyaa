@@ -60,12 +60,12 @@ export default function BookingModal({
               className="absolute top-4 right-4 p-2 rounded-lg bg-[#0b0c10] border border-[#1e222d] text-slate-400 hover:text-white transition-colors"
               aria-label="Close modal"
             >
-              <X className="w-5 h-5 text-[#b5f63d]" />
+              <X className="w-5 h-5 text-[#FAB304]" />
             </button>
 
             {submitted ? (
               <div className="text-center py-8 space-y-4">
-                <div className="w-16 h-16 bg-[#0b0c10] text-[#b5f63d] rounded-full flex items-center justify-center mx-auto border border-[#1e222d]">
+                <div className="w-16 h-16 bg-[#0b0c10] text-[#FAB304] rounded-full flex items-center justify-center mx-auto border border-[#1e222d]">
                   <CheckCircle className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-black text-white uppercase">Enquiry Sent Successfully!</h3>
@@ -85,7 +85,7 @@ export default function BookingModal({
             ) : (
               <div>
                 <div className="mb-6 space-y-1">
-                  <span className="text-xs uppercase font-extrabold tracking-[0.2em] text-[#b5f63d]">
+                  <span className="text-xs uppercase font-extrabold tracking-[0.2em] text-[#FAB304]">
                     BOOK RIDE / SERVICE
                   </span>
                   <h3 className="text-2xl font-black text-white uppercase">Taxiyaa Booking & Enquiry</h3>
@@ -98,7 +98,7 @@ export default function BookingModal({
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-bold text-slate-300 mb-1 flex items-center gap-1 uppercase tracking-wider">
-                        <User className="w-3.5 h-3.5 text-[#b5f63d]" /> Full Name *
+                        <User className="w-3.5 h-3.5 text-[#FAB304]" /> Full Name *
                       </label>
                       <input
                         type="text"
@@ -106,12 +106,12 @@ export default function BookingModal({
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Enter your name"
-                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#b5f63d]"
+                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#FAB304]"
                       />
                     </div>
                     <div>
                       <label className="block text-xs font-bold text-slate-300 mb-1 flex items-center gap-1 uppercase tracking-wider">
-                        <Phone className="w-3.5 h-3.5 text-[#b5f63d]" /> Phone Number *
+                        <Phone className="w-3.5 h-3.5 text-[#FAB304]" /> Phone Number *
                       </label>
                       <input
                         type="tel"
@@ -119,7 +119,7 @@ export default function BookingModal({
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         placeholder="+91 Mobile number"
-                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#b5f63d]"
+                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#FAB304]"
                       />
                     </div>
                   </div>
@@ -127,24 +127,24 @@ export default function BookingModal({
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-bold text-slate-300 mb-1 flex items-center gap-1 uppercase tracking-wider">
-                        <Mail className="w-3.5 h-3.5 text-[#b5f63d]" /> Email Address
+                        <Mail className="w-3.5 h-3.5 text-[#FAB304]" /> Email Address
                       </label>
                       <input
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="name@email.com"
-                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#b5f63d]"
+                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#FAB304]"
                       />
                     </div>
                     <div>
                       <label className="block text-xs font-bold text-slate-300 mb-1 flex items-center gap-1 uppercase tracking-wider">
-                        <Car className="w-3.5 h-3.5 text-[#b5f63d]" /> Required Service
+                        <Car className="w-3.5 h-3.5 text-[#FAB304]" /> Required Service
                       </label>
                       <select
                         value={service}
                         onChange={(e) => setService(e.target.value)}
-                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-sm text-white focus:outline-none focus:border-[#b5f63d]"
+                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-sm text-white focus:outline-none focus:border-[#FAB304]"
                       >
                         <option value="Car rental / local & outstation" className="bg-[#13151b]">Car rental / local & outstation</option>
                         <option value="Airport Rental Car transfer" className="bg-[#13151b]">Airport Rental Car transfer</option>
@@ -164,38 +164,38 @@ export default function BookingModal({
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div>
                       <label className="block text-xs font-bold text-slate-300 mb-1 flex items-center gap-1 uppercase tracking-wider">
-                        <Calendar className="w-3.5 h-3.5 text-[#b5f63d]" /> Travel Date *
+                        <Calendar className="w-3.5 h-3.5 text-[#FAB304]" /> Travel Date *
                       </label>
                       <input
                         type="date"
                         required
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
-                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-[#b5f63d]"
+                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-[#FAB304]"
                       />
                     </div>
                     <div>
                       <label className="block text-xs font-bold text-slate-300 mb-1 flex items-center gap-1 uppercase tracking-wider">
-                        <MapPin className="w-3.5 h-3.5 text-[#b5f63d]" /> Pickup Location
+                        <MapPin className="w-3.5 h-3.5 text-[#FAB304]" /> Pickup Location
                       </label>
                       <input
                         type="text"
                         value={pickup}
                         onChange={(e) => setPickup(e.target.value)}
                         placeholder="Goregaon / Mumbai"
-                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#b5f63d]"
+                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FAB304]"
                       />
                     </div>
                     <div>
                       <label className="block text-xs font-bold text-slate-300 mb-1 flex items-center gap-1 uppercase tracking-wider">
-                        <MapPin className="w-3.5 h-3.5 text-[#b5f63d]" /> Destination
+                        <MapPin className="w-3.5 h-3.5 text-[#FAB304]" /> Destination
                       </label>
                       <input
                         type="text"
                         value={destination}
                         onChange={(e) => setDestination(e.target.value)}
                         placeholder="Pune / Shirdi / Goa"
-                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#b5f63d]"
+                        className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FAB304]"
                       />
                     </div>
                   </div>
@@ -207,7 +207,7 @@ export default function BookingModal({
                     <select
                       value={vehicle}
                       onChange={(e) => setVehicle(e.target.value)}
-                      className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-sm text-white focus:outline-none focus:border-[#b5f63d]"
+                      className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-sm text-white focus:outline-none focus:border-[#FAB304]"
                     >
                       <option value="Sedan (Swift Dzire / Etios)" className="bg-[#13151b]">Sedan (Swift Dzire / Etios - 4 Seats)</option>
                       <option value="SUV Maruti Ertiga (6 Seats)" className="bg-[#13151b]">SUV Maruti Ertiga (6 Seats)</option>
@@ -229,7 +229,7 @@ export default function BookingModal({
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       placeholder="Flight numbers, passenger count, return timing..."
-                      className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#b5f63d]"
+                      className="w-full bg-[#0b0c10] border border-[#1e222d] rounded-xl px-3.5 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FAB304]"
                     />
                   </div>
 
@@ -249,3 +249,7 @@ export default function BookingModal({
     </AnimatePresence>
   );
 }
+
+
+
+

@@ -35,10 +35,10 @@ export default function FeatureHighlights() {
             return (
               <div
                 key={index}
-                className="card-nova p-6 flex flex-col justify-between group hover:border-[#b5f63d]/50"
+                className="card-nova p-6 flex flex-col justify-between group hover:border-[#FAB304]/50"
               >
                 <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-xl bg-[#0b0c10] border border-[#1e222d] text-[#b5f63d] flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-[#0b0c10] border border-[#1e222d] text-[#FAB304] flex items-center justify-center group-hover:scale-110 transition-transform">
                     <IconComponent className="w-6 h-6" />
                   </div>
                   <h3 className="text-lg font-black text-white uppercase tracking-tight">{item.title}</h3>
@@ -52,3 +52,7 @@ export default function FeatureHighlights() {
     </section>
   );
 }
+
+
+
+

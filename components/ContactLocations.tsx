@@ -7,7 +7,7 @@ export default function ContactLocations() {
     <section id="contact" className="py-20 bg-[#13151b] border-t border-[#1e222d] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-black tracking-[0.2em] text-[#b5f63d] uppercase">
+          <span className="text-xs font-black tracking-[0.2em] text-[#FAB304] uppercase">
             REACH US 24/7
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight">
@@ -22,7 +22,7 @@ export default function ContactLocations() {
           {/* Contact Details Cards */}
           <div className="lg:col-span-5 space-y-4">
             <div className="card-nova p-6 space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#0b0c10] border border-[#1e222d] text-[#b5f63d] flex items-center justify-center font-bold">
+              <div className="w-10 h-10 rounded-xl bg-[#0b0c10] border border-[#1e222d] text-[#FAB304] flex items-center justify-center font-bold">
                 <MapPin className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-black text-white uppercase">Main Office Location</h3>
@@ -32,18 +32,18 @@ export default function ContactLocations() {
             </div>
 
             <div className="card-nova p-6 space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#0b0c10] border border-[#1e222d] text-[#b5f63d] flex items-center justify-center font-bold">
+              <div className="w-10 h-10 rounded-xl bg-[#0b0c10] border border-[#1e222d] text-[#FAB304] flex items-center justify-center font-bold">
                 <Phone className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-black text-white uppercase">24/7 Booking Hotline</h3>
               <p className="text-xs text-slate-300 font-medium">Call for instant cab dispatch & outstation quotes.</p>
-              <a href="tel:+919833867640" className="text-xl font-black text-[#b5f63d] block hover:underline">
+              <a href="tel:+919833867640" className="text-xl font-black text-[#FAB304] block hover:underline">
                 +91 98338 67640
               </a>
             </div>
 
             <div className="card-nova p-6 space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#0b0c10] border border-[#1e222d] text-[#b5f63d] flex items-center justify-center font-bold">
+              <div className="w-10 h-10 rounded-xl bg-[#0b0c10] border border-[#1e222d] text-[#FAB304] flex items-center justify-center font-bold">
                 <Mail className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-black text-white uppercase">Email & WhatsApp Desk</h3>
@@ -67,7 +67,7 @@ export default function ContactLocations() {
           {/* Location Map Placeholder / Coverage Box */}
           <div className="lg:col-span-7 card-nova p-6 space-y-6">
             <div className="space-y-2">
-              <span className="text-xs font-black text-[#b5f63d] uppercase tracking-wider block">
+              <span className="text-xs font-black text-[#FAB304] uppercase tracking-wider block">
                 SERVICE COVERAGE AREA
               </span>
               <h3 className="text-2xl font-black text-white uppercase">
@@ -96,8 +96,8 @@ export default function ContactLocations() {
               ))}
             </div>
 
-            <div className="p-4 rounded-xl bg-[#0b0c10] border border-[#b5f63d]/30 flex items-center gap-3">
-              <Clock className="w-6 h-6 text-[#b5f63d] flex-shrink-0" />
+            <div className="p-4 rounded-xl bg-[#0b0c10] border border-[#FAB304]/30 flex items-center gap-3">
+              <Clock className="w-6 h-6 text-[#FAB304] flex-shrink-0" />
               <div>
                 <span className="text-xs font-black text-white uppercase block">OPERATING HOURS</span>
                 <span className="text-xs text-slate-300 font-semibold">24 Hours a Day, 365 Days a Year (Zero Holiday Downtime)</span>
@@ -109,3 +109,7 @@ export default function ContactLocations() {
     </section>
   );
 }
+
+
+
+

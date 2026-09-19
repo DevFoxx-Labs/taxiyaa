@@ -118,7 +118,7 @@ export const routesData: RouteItem[] = [
     duration: "4.5 Hours",
     startingFare: "₹3,999",
     category: "pilgrimage",
-    heroImage: "https://images.unsplash.com/photo-1540339832862-47459980783b?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/flight_booking.jpg",
     description: "Dedicated spiritual roadtrip from Mumbai to Shirdi Sai Baba Temple via the modern Hindu Hrudaysamrat Balasaheb Thackeray Samruddhi Mahamarg. Includes optional Shanisingnapur stopover.",
     highlights: [
       "Ultra-fast smooth ride via Samruddhi Mahamarg Expressway",
@@ -290,7 +290,7 @@ export const routesData: RouteItem[] = [
     duration: "3-4 Days",
     startingFare: "Custom Quote",
     category: "pilgrimage",
-    heroImage: "https://images.unsplash.com/photo-1540339832862-47459980783b?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/flight_booking.jpg",
     description: "Spiritual pilgrimage tour covering 3 sacred Lord Shiva Jyotirlingas in Maharashtra: Trimbakeshwar (Nashik), Bhimashankar (Pune), and Grishneshwar (Ellora/Aurangabad).",
     highlights: [
       "Covers 3 major Jyotirlingas in one seamless roadtrip",
@@ -369,3 +369,4 @@ export function getRouteBySlug(slug: string): RouteItem | undefined {
       r.id.toLowerCase() === normalized
   );
 }
+

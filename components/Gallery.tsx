@@ -44,7 +44,7 @@ export default function Gallery() {
     <section className="py-20 bg-[#13151b] border-t border-[#1e222d] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <span className="text-xs font-black tracking-[0.2em] text-[#b5f63d] uppercase">
+          <span className="text-xs font-black tracking-[0.2em] text-[#FAB304] uppercase">
             GALLERY & VISUALS
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight">
@@ -67,7 +67,7 @@ export default function Gallery() {
                 onClick={() => setFilter(tab.id)}
                 className={`px-4 py-2 rounded-xl text-xs font-bold uppercase transition-all ${
                   filter === tab.id
-                    ? "bg-[#b5f63d] text-[#0b0c10] shadow-md"
+                    ? "bg-[#FAB304] text-[#0b0c10] shadow-md"
                     : "bg-[#0b0c10] border border-[#1e222d] text-slate-400 hover:text-white"
                 }`}
               >
@@ -87,7 +87,7 @@ export default function Gallery() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b0c10] via-transparent to-transparent opacity-80 group-hover:opacity-95 transition-opacity" />
               <div className="absolute bottom-4 left-4 right-4">
-                <span className="text-[10px] font-black uppercase text-[#b5f63d] tracking-wider block">
+                <span className="text-[10px] font-black uppercase text-[#FAB304] tracking-wider block">
                   {photo.category}
                 </span>
                 <h3 className="text-base font-black text-white uppercase">{photo.title}</h3>
@@ -99,3 +99,7 @@ export default function Gallery() {
     </section>
   );
 }
+
+
+
+

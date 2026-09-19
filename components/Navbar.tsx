@@ -49,7 +49,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
       <div className="bg-[#13151b] border-b border-[#1e222d] py-1.5 px-4 text-xs font-semibold text-slate-300">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#b5f63d]/10 text-[#b5f63d] text-[10px] uppercase font-bold border border-[#b5f63d]/20">
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#FAB304]/10 text-[#FAB304] text-[10px] uppercase font-bold border border-[#FAB304]/20">
               <ShieldCheck className="w-3 h-3" /> Verified 24/7 Cab Service
             </span>
             <span className="hidden sm:inline text-slate-400">CSMIA Airport Drops • Intercity Outstation Cabs • Luxury Force Urbania</span>
@@ -57,9 +57,9 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
           <div className="flex items-center gap-4">
             <a
               href="tel:+919833867640"
-              className="flex items-center gap-1.5 text-slate-200 hover:text-[#b5f63d] transition-colors"
+              className="flex items-center gap-1.5 text-slate-200 hover:text-[#FAB304] transition-colors"
             >
-              <Phone className="w-3.5 h-3.5 text-[#b5f63d]" />
+              <Phone className="w-3.5 h-3.5 text-[#FAB304]" />
               <span className="font-bold">+91 98338 67640</span>
             </a>
           </div>
@@ -80,7 +80,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
 
           {/* Desktop Navigation Links with Dropdowns */}
           <nav className="hidden md:flex items-center gap-7">
-            <Link href="/" className="text-sm font-semibold text-slate-300 hover:text-[#b5f63d] transition-colors">
+            <Link href="/" className="text-sm font-semibold text-slate-300 hover:text-[#FAB304] transition-colors">
               Home
             </Link>
 
@@ -90,9 +90,9 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
               onMouseEnter={() => setActiveDropdown("vehicles")}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="text-sm font-semibold text-slate-300 group-hover:text-[#b5f63d] transition-colors flex items-center gap-1 py-2">
+              <button className="text-sm font-semibold text-slate-300 group-hover:text-[#FAB304] transition-colors flex items-center gap-1 py-2">
                 <span>Our Vehicles</span>
-                <ChevronDown className="w-3.5 h-3.5 text-[#b5f63d]" />
+                <ChevronDown className="w-3.5 h-3.5 text-[#FAB304]" />
               </button>
               {activeDropdown === "vehicles" && (
                 <div className="absolute top-full left-0 w-64 bg-[#13151b] border border-[#1e222d] rounded-xl shadow-2xl p-2 space-y-1">
@@ -100,7 +100,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
                     <Link
                       key={idx}
                       href={item.href}
-                      className="block px-3 py-2 rounded-lg text-xs font-bold text-slate-300 hover:bg-[#0b0c10] hover:text-[#b5f63d] transition-colors"
+                      className="block px-3 py-2 rounded-lg text-xs font-bold text-slate-300 hover:bg-[#0b0c10] hover:text-[#FAB304] transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -115,9 +115,9 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
               onMouseEnter={() => setActiveDropdown("services")}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="text-sm font-semibold text-slate-300 group-hover:text-[#b5f63d] transition-colors flex items-center gap-1 py-2">
+              <button className="text-sm font-semibold text-slate-300 group-hover:text-[#FAB304] transition-colors flex items-center gap-1 py-2">
                 <span>Services</span>
-                <ChevronDown className="w-3.5 h-3.5 text-[#b5f63d]" />
+                <ChevronDown className="w-3.5 h-3.5 text-[#FAB304]" />
               </button>
               {activeDropdown === "services" && (
                 <div className="absolute top-full left-0 w-64 bg-[#13151b] border border-[#1e222d] rounded-xl shadow-2xl p-2 space-y-1">
@@ -125,7 +125,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
                     <Link
                       key={idx}
                       href={item.href}
-                      className="block px-3 py-2 rounded-lg text-xs font-bold text-slate-300 hover:bg-[#0b0c10] hover:text-[#b5f63d] transition-colors"
+                      className="block px-3 py-2 rounded-lg text-xs font-bold text-slate-300 hover:bg-[#0b0c10] hover:text-[#FAB304] transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -140,9 +140,9 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
               onMouseEnter={() => setActiveDropdown("routes")}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="text-sm font-semibold text-slate-300 group-hover:text-[#b5f63d] transition-colors flex items-center gap-1 py-2">
+              <button className="text-sm font-semibold text-slate-300 group-hover:text-[#FAB304] transition-colors flex items-center gap-1 py-2">
                 <span>Outstation Routes</span>
-                <ChevronDown className="w-3.5 h-3.5 text-[#b5f63d]" />
+                <ChevronDown className="w-3.5 h-3.5 text-[#FAB304]" />
               </button>
               {activeDropdown === "routes" && (
                 <div className="absolute top-full left-0 w-64 bg-[#13151b] border border-[#1e222d] rounded-xl shadow-2xl p-2 space-y-1">
@@ -150,7 +150,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
                     <Link
                       key={idx}
                       href={item.href}
-                      className="block px-3 py-2 rounded-lg text-xs font-bold text-slate-300 hover:bg-[#0b0c10] hover:text-[#b5f63d] transition-colors"
+                      className="block px-3 py-2 rounded-lg text-xs font-bold text-slate-300 hover:bg-[#0b0c10] hover:text-[#FAB304] transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -159,13 +159,13 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
               )}
             </div>
 
-            <a href="#about" className="text-sm font-semibold text-slate-300 hover:text-[#b5f63d] transition-colors">
+            <a href="#about" className="text-sm font-semibold text-slate-300 hover:text-[#FAB304] transition-colors">
               About Us
             </a>
-            <a href="#faqs" className="text-sm font-semibold text-slate-300 hover:text-[#b5f63d] transition-colors">
+            <a href="#faqs" className="text-sm font-semibold text-slate-300 hover:text-[#FAB304] transition-colors">
               FAQs
             </a>
-            <a href="#contact" className="text-sm font-semibold text-slate-300 hover:text-[#b5f63d] transition-colors">
+            <a href="#contact" className="text-sm font-semibold text-slate-300 hover:text-[#FAB304] transition-colors">
               Contact
             </a>
           </nav>
@@ -174,9 +174,9 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
           <div className="hidden md:flex items-center gap-4">
             <a
               href="tel:+919833867640"
-              className="px-4 py-2.5 rounded-xl border border-[#1e222d] bg-[#13151b] text-slate-200 text-xs font-bold hover:border-[#b5f63d] transition-colors flex items-center gap-2"
+              className="px-4 py-2.5 rounded-lg border border-[#1e222d] bg-[#13151b] text-slate-200 text-xs font-bold hover:border-[#FAB304] transition-colors flex items-center gap-2"
             >
-              <Phone className="w-3.5 h-3.5 text-[#b5f63d]" />
+              <Phone className="w-3.5 h-3.5 text-[#FAB304]" />
               <span>Call Now</span>
             </a>
             <button
@@ -198,10 +198,10 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl bg-[#13151b] border border-[#1e222d] text-slate-300 hover:text-white"
+              className="p-2 rounded-lg bg-[#13151b] border border-[#1e222d] text-slate-300 hover:text-white"
               aria-label="Toggle Navigation Menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6 text-[#b5f63d]" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-6 h-6 text-[#FAB304]" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
@@ -210,21 +210,21 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
       {/* Mobile Drawer Navigation */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-[#13151b] border-b border-[#1e222d] px-4 pt-3 pb-6 space-y-3 max-h-[80vh] overflow-y-auto">
-          <Link href="/" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 rounded-lg text-base font-semibold text-slate-200 hover:bg-[#0b0c10] hover:text-[#b5f63d]">
+          <Link href="/" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 rounded-lg text-base font-semibold text-slate-200 hover:bg-[#0b0c10] hover:text-[#FAB304]">
             Home
           </Link>
           <div className="space-y-1">
-            <span className="text-xs font-black text-[#b5f63d] uppercase tracking-wider px-3 block">Services & Vehicles</span>
+            <span className="text-xs font-black text-[#FAB304] uppercase tracking-wider px-3 block">Services & Vehicles</span>
             {serviceLinks.map((s, i) => (
-              <Link key={i} href={s.href} onClick={() => setMobileMenuOpen(false)} className="block px-3 py-1.5 text-xs font-semibold text-slate-300 hover:text-[#b5f63d]">
+              <Link key={i} href={s.href} onClick={() => setMobileMenuOpen(false)} className="block px-3 py-1.5 text-xs font-semibold text-slate-300 hover:text-[#FAB304]">
                 • {s.name}
               </Link>
             ))}
           </div>
           <div className="space-y-1">
-            <span className="text-xs font-black text-[#b5f63d] uppercase tracking-wider px-3 block">Outstation Routes</span>
+            <span className="text-xs font-black text-[#FAB304] uppercase tracking-wider px-3 block">Outstation Routes</span>
             {routeLinks.map((r, i) => (
-              <Link key={i} href={r.href} onClick={() => setMobileMenuOpen(false)} className="block px-3 py-1.5 text-xs font-semibold text-slate-300 hover:text-[#b5f63d]">
+              <Link key={i} href={r.href} onClick={() => setMobileMenuOpen(false)} className="block px-3 py-1.5 text-xs font-semibold text-slate-300 hover:text-[#FAB304]">
                 • {r.name}
               </Link>
             ))}
@@ -232,9 +232,9 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
           <div className="pt-2 border-t border-[#1e222d] flex flex-col gap-2">
             <a
               href="tel:+919833867640"
-              className="w-full text-center py-3 rounded-xl border border-[#1e222d] bg-[#0b0c10] text-slate-200 text-sm font-bold flex items-center justify-center gap-2"
+              className="w-full text-center py-3 rounded-lg border border-[#1e222d] bg-[#0b0c10] text-slate-200 text-sm font-bold flex items-center justify-center gap-2"
             >
-              <Phone className="w-4 h-4 text-[#b5f63d]" />
+              <Phone className="w-4 h-4 text-[#FAB304]" />
               <span>Call +91 98338 67640</span>
             </a>
           </div>
@@ -243,3 +243,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
     </header>
   );
 }
+
+
+
+

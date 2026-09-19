@@ -61,7 +61,7 @@ export default function Reviews() {
                       <Star key={i} className="w-4 h-4 fill-amber-400 stroke-amber-400" />
                     ))}
                   </div>
-                  <Quote className="w-8 h-8 text-[#1e222d] group-hover:text-[#b5f63d]/30 transition-colors" />
+                  <Quote className="w-8 h-8 text-[#1e222d] group-hover:text-[#FAB304]/30 transition-colors" />
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-300 font-medium italic leading-relaxed">
@@ -73,7 +73,7 @@ export default function Reviews() {
                 <div>
                   <h3 className="text-sm font-black text-white uppercase flex items-center gap-1">
                     {rev.name}
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#b5f63d]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#FAB304]" />
                   </h3>
                   <span className="text-[11px] text-slate-400 font-semibold block">{rev.role} • {rev.location}</span>
                 </div>
@@ -85,3 +85,7 @@ export default function Reviews() {
     </section>
   );
 }
+
+
+
+

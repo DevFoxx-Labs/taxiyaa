@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import BookingModal from "@/components/BookingModal";
 import { ServiceItem } from "@/data/servicesData";
-import { ShieldCheck, CheckCircle2, ChevronRight, Phone, ArrowLeft, Star, HelpCircle } from "lucide-react";
+import { ShieldCheck, CheckCircle2, ChevronRight, Phone, ArrowLeft, HelpCircle } from "lucide-react";
 
 interface ServiceDetailClientProps {
   service: ServiceItem;
@@ -17,7 +17,7 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <main className="min-h-screen bg-[#0b0c10] text-slate-100 flex flex-col selection:bg-[#b5f63d] selection:text-[#0b0c10]">
+    <main className="min-h-screen bg-[#0b0c10] text-slate-100 flex flex-col selection:bg-[#FAB304] selection:text-[#0b0c10]">
       <Navbar onOpenBookingModal={() => setIsModalOpen(true)} />
 
       {/* Hero Section */}
@@ -27,13 +27,13 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
           <div className="space-y-4">
             <Link
               href="/#services"
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#b5f63d] hover:underline uppercase tracking-wider"
+              className="inline-flex items-center gap-2 text-xs font-bold text-[#FAB304] hover:underline uppercase tracking-wider"
             >
               <ArrowLeft className="w-4 h-4" /> Back to All Services
             </Link>
 
             <div className="flex flex-wrap items-center gap-3">
-              <span className="px-3.5 py-1 rounded-full bg-[#13151b] border border-[#1e222d] text-[#b5f63d] text-xs font-black uppercase">
+              <span className="px-3.5 py-1 rounded-full bg-[#13151b] border border-[#1e222d] text-[#FAB304] text-xs font-black uppercase">
                 {service.badge}
               </span>
               <span className="text-xs font-bold text-slate-400">Taxiyaa Premium Mobility</span>
@@ -56,9 +56,9 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
               </button>
               <a
                 href="tel:+919833867640"
-                className="px-6 py-4 rounded-xl border border-[#1e222d] bg-[#13151b] text-slate-200 text-xs font-bold uppercase hover:border-[#b5f63d] transition-colors flex items-center gap-2"
+                className="px-6 py-4 rounded-lg border border-[#1e222d] bg-[#13151b] text-slate-200 text-xs font-bold uppercase hover:border-[#FAB304] transition-colors flex items-center gap-2"
               >
-                <Phone className="w-4 h-4 text-[#b5f63d]" />
+                <Phone className="w-4 h-4 text-[#FAB304]" />
                 <span>Call Hotline</span>
               </a>
             </div>
@@ -92,7 +92,7 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {service.keyFeatures.map((feat, idx) => (
                     <div key={idx} className="p-4 rounded-xl bg-[#0b0c10] border border-[#1e222d] flex items-start gap-3">
-                      <ShieldCheck className="w-5 h-5 text-[#b5f63d] flex-shrink-0 mt-0.5" />
+                      <ShieldCheck className="w-5 h-5 text-[#FAB304] flex-shrink-0 mt-0.5" />
                       <span className="text-xs font-bold text-slate-200">{feat}</span>
                     </div>
                   ))}
@@ -105,7 +105,7 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
                 <div className="space-y-2">
                   {service.benefits.map((ben, idx) => (
                     <div key={idx} className="flex items-center gap-3 p-3 rounded-lg bg-[#0b0c10]/60 border border-[#1e222d]">
-                      <CheckCircle2 className="w-4 h-4 text-[#b5f63d] flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-[#FAB304] flex-shrink-0" />
                       <span className="text-xs font-semibold text-slate-300">{ben}</span>
                     </div>
                   ))}
@@ -117,16 +117,16 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
                 <h2 className="text-2xl font-black text-white uppercase">Recommended Fleet Options</h2>
                 <div className="bg-[#0b0c10] border border-[#1e222d] rounded-2xl overflow-hidden">
                   <div className="grid grid-cols-12 bg-[#13151b] p-3 text-xs font-black uppercase text-slate-300 border-b border-[#1e222d]">
-                    <div className="col-span-5">Vehicle Name</div>
+                    <div className="col-span-6">Vehicle Name</div>
                     <div className="col-span-3">Capacity</div>
-                    <div className="col-span-4 text-right">Fare Rate</div>
+                    <div className="col-span-3 text-right">Service Status</div>
                   </div>
                   <div className="divide-y divide-[#1e222d]">
                     {service.recommendedVehicles.map((v, idx) => (
                       <div key={idx} className="grid grid-cols-12 p-3.5 text-xs items-center">
-                        <div className="col-span-5 font-black text-white">{v.name} <span className="text-[10px] text-slate-400 block font-normal">{v.type}</span></div>
+                        <div className="col-span-6 font-black text-white">{v.name} <span className="text-[10px] text-slate-400 block font-normal">{v.type}</span></div>
                         <div className="col-span-3 font-semibold text-slate-300">{v.capacity}</div>
-                        <div className="col-span-4 text-right font-black text-[#b5f63d]">{v.price}</div>
+                        <div className="col-span-3 text-right font-bold text-[#FAB304]">Available 24/7</div>
                       </div>
                     ))}
                   </div>
@@ -137,7 +137,7 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
               {service.faqs && service.faqs.length > 0 && (
                 <div className="space-y-4 pt-4 border-t border-[#1e222d]">
                   <h2 className="text-2xl font-black text-white uppercase flex items-center gap-2">
-                    <HelpCircle className="w-6 h-6 text-[#b5f63d]" /> Frequently Asked Questions
+                    <HelpCircle className="w-6 h-6 text-[#FAB304]" /> Frequently Asked Questions
                   </h2>
                   <div className="space-y-3">
                     {service.faqs.map((faq, idx) => (
@@ -155,7 +155,7 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
             <div className="lg:col-span-4 space-y-6">
               <div className="card-nova p-6 space-y-6 sticky top-28">
                 <div className="space-y-2">
-                  <span className="text-[10px] font-black tracking-widest text-[#b5f63d] uppercase">
+                  <span className="text-[10px] font-black tracking-widest text-[#FAB304] uppercase">
                     INSTANT RESERVATION
                   </span>
                   <h3 className="text-xl font-black text-white uppercase">Book {service.badge}</h3>
@@ -167,7 +167,7 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
                 <div className="p-4 rounded-xl bg-[#0b0c10] border border-[#1e222d] space-y-2">
                   <div className="flex items-center justify-between text-xs font-bold text-slate-300">
                     <span>24/7 Availability</span>
-                    <span className="text-[#b5f63d]">Active Now</span>
+                    <span className="text-[#FAB304]">Active Now</span>
                   </div>
                   <div className="flex items-center justify-between text-xs font-bold text-slate-300">
                     <span>Surge Fares</span>
@@ -190,9 +190,9 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
                 <div className="pt-2 text-center">
                   <a
                     href="tel:+919833867640"
-                    className="text-xs font-bold text-slate-300 hover:text-[#b5f63d] flex items-center justify-center gap-1.5"
+                    className="text-xs font-bold text-slate-300 hover:text-[#FAB304] flex items-center justify-center gap-1.5"
                   >
-                    <Phone className="w-3.5 h-3.5 text-[#b5f63d]" />
+                    <Phone className="w-3.5 h-3.5 text-[#FAB304]" />
                     <span>Call Hotline: +91 98338 67640</span>
                   </a>
                 </div>
@@ -213,3 +213,7 @@ export default function ServiceDetailClient({ service }: ServiceDetailClientProp
     </main>
   );
 }
+
+
+
+

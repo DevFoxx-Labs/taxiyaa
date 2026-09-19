@@ -33,7 +33,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#0b0c10] text-slate-100 flex flex-col selection:bg-[#b5f63d] selection:text-[#0b0c10]">
+    <main className="min-h-screen bg-[#0b0c10] text-slate-100 flex flex-col selection:bg-[#FAB304] selection:text-[#0b0c10]">
       <Navbar onOpenBookingModal={handleOpenBookingModal} />
       <Hero onOpenBookingModal={() => handleOpenBookingModal()} />
       <MarqueeBar />
@@ -63,3 +63,7 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+
