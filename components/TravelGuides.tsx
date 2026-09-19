@@ -62,7 +62,15 @@ export default function TravelGuides() {
           {articles.map((art, idx) => (
             <div key={idx} className="card-nova overflow-hidden flex flex-col justify-between group border border-[#1e222d]">
               <div className="relative h-44 border-b border-[#1e222d]">
-                <img src={art.image} alt={art.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img
+                  src={art.image}
+                  alt={art.title}
+                  width={400}
+                  height={176}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#13151b] via-[#13151b]/40 to-transparent" />
                 <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#0b0c10]/90 text-[#FAB304] text-[10px] font-black uppercase border border-[#1e222d]">
                   {art.category}

@@ -15,6 +15,10 @@ export default function Footer() {
               <img
                 src="/taxyiaa-logo-light.webp"
                 alt="Taxiyaa Travels Logo"
+                width={180}
+                height={48}
+                loading="lazy"
+                decoding="async"
                 className="h-12 w-auto object-contain"
               />
             </Link>

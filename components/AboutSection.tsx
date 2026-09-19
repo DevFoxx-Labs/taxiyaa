@@ -37,6 +37,10 @@ export default function AboutSection() {
               <img
                 src="/images/services/service_car_rental.jpg"
                 alt="Taxiyaa Fleet Cab Rental Mumbai"
+                width={600}
+                height={400}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b0c10] via-transparent to-transparent"></div>

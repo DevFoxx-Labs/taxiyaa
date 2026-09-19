@@ -54,6 +54,10 @@ export default function Services({ onOpenBookingModal }: ServicesProps) {
                 <img
                   src={service.heroImage}
                   alt={service.title}
+                  width={400}
+                  height={240}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#13151b] via-[#13151b]/40 to-transparent" />

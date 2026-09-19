@@ -94,6 +94,10 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
             <img
               src="/taxyiaa-logo-light.webp"
               alt="Taxiyaa Travels Logo"
+              width={180}
+              height={48}
+              loading="eager"
+              decoding="async"
               className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </Link>

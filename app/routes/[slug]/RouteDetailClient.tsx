@@ -76,7 +76,15 @@ export default function RouteDetailClient({ routeItem }: RouteDetailClientProps)
             <div className="lg:col-span-8 space-y-10">
               {/* Image Banner */}
               <div className="rounded-2xl overflow-hidden border border-[#1e222d] shadow-2xl h-80 relative">
-                <img src={routeItem.heroImage} alt={routeItem.title} className="w-full h-full object-cover" />
+                <img
+                  src={routeItem.heroImage}
+                  alt={routeItem.title}
+                  width={800}
+                  height={320}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#13151b] via-transparent to-transparent" />
               </div>
 

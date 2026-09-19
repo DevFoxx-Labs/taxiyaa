@@ -105,6 +105,10 @@ export default function Gallery() {
                 <img
                   src={photo.url}
                   alt={photo.title}
+                  width={400}
+                  height={256}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b0c10] via-transparent to-transparent opacity-80 group-hover:opacity-95 transition-opacity" />
