@@ -94,8 +94,7 @@ export default function Hero({ onOpenBookingModal }: HeroProps) {
               width={1200}
               height={675}
               loading={currentSlide === 0 ? "eager" : "lazy"}
-              // @ts-expect-error fetchpriority attribute
-              fetchpriority={currentSlide === 0 ? "high" : "auto"}
+              fetchPriority={currentSlide === 0 ? "high" : "auto"}
               decoding="async"
               className="w-full h-full object-cover object-center"
             />
