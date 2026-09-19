@@ -12,7 +12,7 @@ export default function TravelGuides() {
       author: "Taxiyaa Editorial",
       snippet: "Planning the 8-Ganesh Temple pilgrimage circuit? Learn the ideal sequence, recommended 2-day vs 3-day itinerary, and vehicle choices for families.",
       link: "/routes/mumbai-to-ashtavinayak-tour",
-      image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80",
+      image: "/images/shirdi_temple.jpg",
     },
     {
       title: "Mumbai to Pune Expressway Cab Fares & Toll Guide",
@@ -21,7 +21,7 @@ export default function TravelGuides() {
       author: "Taxiyaa Editorial",
       snippet: "Everything you need to know about one-way cab drops from Mumbai to Hinjewadi, Baner, and Pune city. Fixed fare calculations vs toll booth rules.",
       link: "/routes/mumbai-to-pune-cab",
-      image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=600&q=80",
+      image: "/images/fleet/swift_dzire.jpg",
     },
     {
       title: "Force Urbania vs Maharaja Tempo Traveller: Which Luxury Van to Rent?",
@@ -30,7 +30,7 @@ export default function TravelGuides() {
       author: "Taxiyaa Editorial",
       snippet: "Detailed comparison between monocoque Force Urbania vans and 1x1 Maharaja VIP recliners for destination weddings and corporate travel.",
       link: "/services/maharaja-tempo-traveller-force-urbania",
-      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80",
+      image: "/images/fleet/maharaja_traveller.jpg",
     },
     {
       title: "CSMIA Mumbai Airport Pickup Guide (Terminal 1 & Terminal 2)",
@@ -39,7 +39,7 @@ export default function TravelGuides() {
       author: "Taxiyaa Editorial",
       snippet: "Avoid long taxi queues and surge pricing at Mumbai Airport. Tips for real-time flight tracking, driver meet & greet, and baggage loading.",
       link: "/services/airport-rental-car-transfer",
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=600&q=80",
+      image: "/images/services/service_airport.jpg",
     },
   ];
 
@@ -101,6 +101,7 @@ export default function TravelGuides() {
     </section>
   );
 }
+
 
 
 

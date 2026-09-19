@@ -15,7 +15,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
       luggage: "2-3 Large Bags",
       rate: "₹12 / km",
       ideal: "City Local Travel, CSMIA Airport Drops & Budget Outstation Trips",
-      image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80",
+      image: "/images/fleet/swift_dzire.jpg",
     },
     {
       name: "Maruti Ertiga AC",
@@ -24,7 +24,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
       luggage: "3-4 Large Bags",
       rate: "₹15 / km",
       ideal: "Family Outstation Trips (Pune, Lonavala) & Group Airport Drops",
-      image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=800&q=80",
+      image: "/images/fleet/ertiga_suv.jpg",
     },
     {
       name: "Toyota Innova Crysta",
@@ -33,7 +33,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
       luggage: "4-5 Large Bags",
       rate: "₹18 / km",
       ideal: "VIP Corporate Delegations, Luxury Highway Travel & Wedding Convoys",
-      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+      image: "/images/fleet/innova_crysta.jpg",
     },
     {
       name: "Maharaja Tempo Traveller",
@@ -42,7 +42,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
       luggage: "Dedicated Luggage Bay",
       rate: "₹25 / km",
       ideal: "VIP Travel, Ambient Sky-LED Lights, Smart TV & Individual Recliners",
-      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+      image: "/images/fleet/maharaja_traveller.jpg",
     },
     {
       name: "Force Urbania Executive",
@@ -51,7 +51,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
       luggage: "Deep Rear Boot",
       rate: "₹28 / km",
       ideal: "Ultra-Smooth Air Suspension, Monocoque Body & VIP Corporate Comfort",
-      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+      image: "/images/fleet/force_urbania.jpg",
     },
     {
       name: "Mercedes-Benz / BMW / Fortuner",
@@ -60,7 +60,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
       luggage: "3-4 Bags",
       rate: "₹35 - ₹55 / km",
       ideal: "Red-Carpet Groom Cars, VIP Dignitaries & Executive Delegation",
-      image: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80",
+      image: "/images/fleet/mercedes_luxury.jpg",
     },
     {
       name: "Mini Bus (20 / 25 / 35 Seater)",
@@ -69,7 +69,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
       luggage: "Overhead & Boot Bays",
       rate: "₹30 / km",
       ideal: "Office Staff Commute, Corporate Picnics & Family Functions",
-      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+      image: "/images/fleet/mini_bus.jpg",
     },
     {
       name: "Luxury Tourist Bus & Washroom Coach",
@@ -78,7 +78,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
       luggage: "Heavy Cargo Bay",
       rate: "₹45 / km",
       ideal: "Onboard Toilet, Sleeper Berths & Long Interstate Pilgrimage Tours",
-      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+      image: "/images/fleet/bus_washroom.jpg",
     },
   ];
 
@@ -137,6 +137,7 @@ export default function Fleet({ onOpenBookingModal }: FleetProps) {
     </section>
   );
 }
+
 
 
 

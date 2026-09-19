@@ -16,7 +16,7 @@ export default function PilgrimageSection({ onOpenBookingModal }: PilgrimageSect
       vehicles: "Ertiga SUV / Innova Crysta / Tempo Traveller",
       badge: "Most Popular Pilgrimage",
       slug: "mumbai-to-ashtavinayak-tour",
-      image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80",
+      image: "/images/shirdi_temple.jpg",
     },
     {
       title: "Shirdi Sai Baba & Shanisingnapur Tour",
@@ -34,7 +34,7 @@ export default function PilgrimageSection({ onOpenBookingModal }: PilgrimageSect
       vehicles: "Innova Crysta / Force Urbania / Maharaja TT",
       badge: "Divine Circuit",
       slug: "mumbai-to-jyotirlinga-circuit",
-      image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80",
+      image: "/images/fleet/innova_crysta.jpg",
     },
   ];
 
@@ -108,6 +108,7 @@ export default function PilgrimageSection({ onOpenBookingModal }: PilgrimageSect
     </section>
   );
 }
+
 
 
 

@@ -34,7 +34,7 @@ export const routesData: RouteItem[] = [
     duration: "3.0 Hours",
     startingFare: "₹2,499",
     category: "expressway",
-    heroImage: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/swift_dzire.jpg",
     description: "Book fast, comfortable Mumbai to Pune one-way and roundtrip cabs via the Yashwantrao Chavan Mumbai-Pune Expressway. Doorstep pickups across Mumbai suburbs and drop-offs anywhere in Pune, Baner, Hinjewadi IT Park, Wakad, or Vimannagar.",
     highlights: [
       "Fixed transparent pricing via Mumbai-Pune Expressway",
@@ -64,7 +64,7 @@ export const routesData: RouteItem[] = [
     duration: "2.0 Hours",
     startingFare: "₹1,899",
     category: "hill-station",
-    heroImage: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/ertiga_suv.jpg",
     description: "Enjoy a scenic weekend roadtrip from Mumbai to Lonavala and Khandala. Perfect for monsoon getaways, resort stays, and family sightseeing tours.",
     highlights: [
       "Quick 2-hour highway drive from Mumbai suburbs",
@@ -91,7 +91,7 @@ export const routesData: RouteItem[] = [
     duration: "3.5 Hours",
     startingFare: "₹2,799",
     category: "pilgrimage",
-    heroImage: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/shirdi_temple.jpg",
     description: "Travel smoothly from Mumbai to Nashik and Trimbakeshwar Jyotirlinga. Ideal for wine vineyard tours at Sula, religious temple visits, and business travel.",
     highlights: [
       "Comfortable drive via Samruddhi Mahamarg / NH 160",
@@ -146,7 +146,7 @@ export const routesData: RouteItem[] = [
     duration: "10.0 Hours",
     startingFare: "₹8,999",
     category: "coastal",
-    heroImage: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/innova_crysta.jpg",
     description: "Travel from Mumbai to North or South Goa in pure luxury. Choose between comfortable Innova Crysta SUVs, Force Urbania luxury vans, or Sleeper Coaches.",
     highlights: [
       "Highway roadtrip via Mumbai-Goa Highway (NH 66)",
@@ -173,7 +173,7 @@ export const routesData: RouteItem[] = [
     duration: "5.0 Hours",
     startingFare: "₹3,899",
     category: "hill-station",
-    heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/services/service_corporate.jpg",
     description: "Escape to the cool strawberry hills of Mahabaleshwar and Panchgani. Enjoy mountain ghat roadtrips with experienced hill station drivers.",
     highlights: [
       "Scenic mountain drive through Pasarni Ghat",
@@ -200,7 +200,7 @@ export const routesData: RouteItem[] = [
     duration: "2.5 Hours",
     startingFare: "₹2,199",
     category: "coastal",
-    heroImage: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/ertiga_suv.jpg",
     description: "Hassle-free road trip from Mumbai to Alibaug, Varsoli, Nagaon, and Kashid beaches. Ideal for beach resort weekend getaways.",
     highlights: [
       "Direct road commute via Atal Setu (MTHL) / Pen Highway",
@@ -227,7 +227,7 @@ export const routesData: RouteItem[] = [
     duration: "5.0 Hours",
     startingFare: "₹4,499",
     category: "expressway",
-    heroImage: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/swift_dzire.jpg",
     description: "Punctual intercity cab service from Mumbai to Surat, Vapi, Valsad, and Vadodara via National Highway 48 for business travelers & textile traders.",
     highlights: [
       "Smooth NH 48 highway drive with experienced drivers",
@@ -254,7 +254,7 @@ export const routesData: RouteItem[] = [
     duration: "2-3 Days",
     startingFare: "Custom Quote",
     category: "pilgrimage",
-    heroImage: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/shirdi_temple.jpg",
     description: "Complete 8-Ganesh Temple pilgrimage tour starting from Mumbai. Visit Mayureshwar, Siddhivinayak, Ballaleshwar, Varadhavinayak, Chintamani, Girijatmaj, Vighnahar & Mahaganapati.",
     highlights: [
       "Custom 2-Day or 3-Day sacred Ashtavinayak circuit itinerary",
@@ -316,7 +316,7 @@ export const routesData: RouteItem[] = [
     duration: "7.0 Hours",
     startingFare: "₹5,999",
     category: "pilgrimage",
-    heroImage: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/innova_crysta.jpg",
     description: "Travel comfortably from Mumbai to Kolhapur for Shri Ambabai Mahalaxmi Temple darshan and authentic Kolhapuri culinary & shopping exploration.",
     highlights: [
       "Smooth travel via NH 48 (Mumbai-Satara-Kolhapur Highway)",
@@ -342,7 +342,7 @@ export const routesData: RouteItem[] = [
     duration: "2.5 Hours",
     startingFare: "₹2,299",
     category: "hill-station",
-    heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/services/service_corporate.jpg",
     description: "Quick weekend roadtrip from Mumbai to Igatpuri VIP villas or Matheran Dasturi Naka. Enjoy serene mountain fog and resort stays.",
     highlights: [
       "Fast drive via Mumbai-Nashik Highway / Kasara Ghat",
@@ -369,4 +369,5 @@ export function getRouteBySlug(slug: string): RouteItem | undefined {
       r.id.toLowerCase() === normalized
   );
 }
+
 

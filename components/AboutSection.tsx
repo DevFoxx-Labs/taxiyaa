@@ -11,7 +11,7 @@ export default function AboutSection() {
           <div className="lg:col-span-5 space-y-4">
             <div className="relative rounded-2xl overflow-hidden border border-[#1e222d] shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1000&q=80"
+                src="/images/services/service_car_rental.jpg"
                 alt="Taxiyaa Fleet Cab Rental Mumbai"
                 className="w-full h-80 object-cover"
               />
@@ -89,6 +89,7 @@ export default function AboutSection() {
     </section>
   );
 }
+
 
 
 

@@ -7,32 +7,32 @@ export default function Gallery() {
 
   const photos = [
     {
-      url: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80",
+      url: "/images/services/service_car_rental.jpg",
       title: "Executive Sedan Fleet",
       category: "fleet",
     },
     {
-      url: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80",
+      url: "/images/services/service_airport.jpg",
       title: "CSMIA Airport Terminal Drop",
       category: "airport",
     },
     {
-      url: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+      url: "/images/fleet/maharaja_traveller.jpg",
       title: "17-Seater Luxury Tempo Traveller",
       category: "fleet",
     },
     {
-      url: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80",
+      url: "/images/shirdi_temple.jpg",
       title: "Mumbai-Pune Expressway Travel",
       category: "outstation",
     },
     {
-      url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+      url: "/images/services/service_corporate.jpg",
       title: "Corporate Delegation Transport",
       category: "fleet",
     },
     {
-      url: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80",
+      url: "/images/fleet/innova_crysta.jpg",
       title: "Wedding Convoy Fleet",
       category: "outstation",
     },
@@ -99,6 +99,7 @@ export default function Gallery() {
     </section>
   );
 }
+
 
 
 

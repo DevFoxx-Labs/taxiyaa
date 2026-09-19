@@ -32,7 +32,7 @@ export const servicesData: ServiceItem[] = [
     badge: "Local & Outstation",
     description: "Comfortable, sanitized, and reliable cabs for local hourly rental, outstation getaways, business trips, and one-way drops.",
     longDescription: "Taxiyaa provides top-tier Car Rental and Outstation Cab services across Goregaon West, Andheri, BKC, and all of Mumbai. Whether you need a smooth sedan for local city errands or a spacious SUV for long-distance highway travel to Pune, Lonavala, Nashik, Shirdi, or Goa, our 24/7 verified chauffeurs and sanitized fleet ensure a relaxed, premium travel experience.",
-    heroImage: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/services/service_car_rental.jpg",
     keyFeatures: [
       "24/7 Doorstep Pickup across Mumbai & Metropolitan Suburbs",
       "Fixed Transparent Fares with Zero Surge Pricing",
@@ -65,7 +65,7 @@ export const servicesData: ServiceItem[] = [
     badge: "Airport Service",
     description: "On-time, stress-free airport transfers at CSMIA Mumbai Terminals T1 & T2 with flight tracking and meet & greet.",
     longDescription: "Skip the long airport queues and unpredictable surge rates at Chhatrapati Shivaji Maharaj International Airport (CSMIA Terminals T1 & T2). Taxiyaa offers dedicated 24/7 airport cab transfers with live flight schedule monitoring, driver meet-and-greet, and clean executive cabs.",
-    heroImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/services/service_airport.jpg",
     keyFeatures: [
       "Real-time Flight Tracking for Zero Delay Wait",
       "Dedicated Pickups at Terminal T1 (Domestic) & T2 (International)",
@@ -96,7 +96,7 @@ export const servicesData: ServiceItem[] = [
     badge: "Group Travel",
     description: "Spacious 12, 17 & 26-seater luxury Tempo Travellers and mini-coaches for family events, corporate trips, and pilgrimage tours.",
     longDescription: "Traveling in a group is seamless with Taxiyaa. We offer modern 12, 17, and 26-seater AC Tempo Travellers and executive buses fitted with push-back reclining seats, high-power air conditioning, entertainment systems, and generous luggage bays.",
-    heroImage: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/maharaja_traveller.jpg",
     keyFeatures: [
       "12 / 17 / 26 Seater AC Luxury Tempo Travellers",
       "Ergonomic Push-back Reclining Seats & High Legroom",
@@ -128,7 +128,7 @@ export const servicesData: ServiceItem[] = [
     badge: "VIP Luxury Van",
     description: "Ultra-luxury Force Urbania and 1x1 Maharaja Tempo Travellers featuring individual recliner seats, Smart TV, ambient lighting, and individual AC.",
     longDescription: "Experience first-class road travel with Taxiyaa's Maharaja Tempo Traveller and Force Urbania rental fleet. Designed for VIP corporate delegations, celebrity movement, luxury weddings, and premium family getaways, these vehicles feature 1x1 extra-wide Maharaja recliners with individual armrests, ambient LED mood lighting, Smart LED TVs, onboard Wi-Fi, and individual climate control vents.",
-    heroImage: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/maharaja_traveller.jpg",
     keyFeatures: [
       "Exclusive 1x1 Maharaja Plush Leather Recliners",
       "Force Urbania Monocoque Vans (10, 13 & 17 Seater)",
@@ -160,7 +160,7 @@ export const servicesData: ServiceItem[] = [
     badge: "Ultra Luxury",
     description: "Rent Mercedes C/E/S-Class, BMW 3/5/7 Series, Audi Q7, Toyota Fortuner, and Toyota Vellfire with uniformed VIP chauffeurs.",
     longDescription: "Make a powerful style statement with Taxiyaa Luxury Car & SUV Rentals in Mumbai. Perfect for high-profile corporate delegates, luxury wedding groom cars, red carpet events, and VIP airport pickups. Our fleet includes Mercedes-Benz E-Class & S-Class, BMW 5 & 7 Series, Audi A6/Q7, Toyota Fortuner, and the ultra-exclusive Toyota Vellfire luxury MPV.",
-    heroImage: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/mercedes_luxury.jpg",
     keyFeatures: [
       "Mercedes-Benz C/E/S-Class & BMW 3/5/7 Series Fleet",
       "Toyota Fortuner 4x4 & Audi Q5/Q7 Luxury SUVs",
@@ -192,7 +192,7 @@ export const servicesData: ServiceItem[] = [
     badge: "Large Bus Fleet",
     description: "20, 25, 35, 45 & 56-seater luxury buses, Volvo coaches, sleeper buses, and buses with washroom facilities for events & tours.",
     longDescription: "Transporting large groups for corporate outings, destination weddings, school trips, or pilgrimage tours is smooth and reliable with Taxiyaa. We operate a massive fleet of 20 to 56-seater AC Mini Buses, Volvo Coaches, Sleeper Buses, and Buses equipped with clean onboard washroom facilities.",
-    heroImage: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/maharaja_traveller.jpg",
     keyFeatures: [
       "20, 25 & 35-Seater Executive AC Mini Buses",
       "41, 45, 52 & 56-Seater Volvo Luxury Coaches",
@@ -223,7 +223,7 @@ export const servicesData: ServiceItem[] = [
     badge: "Pilgrimage Travel",
     description: "Dedicated spiritual tour cab & bus packages for Ashtavinayak (8 Temples), Shirdi Sai Baba, Trimbakeshwar, Bhimashankar & Kolhapur.",
     longDescription: "Embark on a divine and peaceful spiritual journey with Taxiyaa Pilgrimage Tour Packages. We specialize in custom door-to-door temple circuits from Mumbai, including the Ashtavinayak 8-Ganesh Temple Circuit, Shirdi Sai Baba & Shanisingnapur, Trimbakeshwar & Bhimashankar Jyotirlingas, and Mahalaxmi Kolhapur.",
-    heroImage: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/shirdi_temple.jpg",
     keyFeatures: [
       "Ashtavinayak 8-Temple Circuit (2 to 3 Day Custom Package)",
       "Shirdi Sai Baba + Shanisingnapur + Trimbakeshwar Combo",
@@ -282,7 +282,7 @@ export const servicesData: ServiceItem[] = [
     badge: "Business Travel",
     description: "Dependable, premium corporate travel solutions, executive luxury sedans, VIP delegation transport, and monthly invoicing.",
     longDescription: "Taxiyaa is a trusted corporate mobility partner for enterprises, MNCs, and business hubs across Mumbai, BKC, NESCO Goregaon, and Powai. We supply executive sedans, Innova Crystas, and luxury coaches with dedicated account managers and monthly billing options.",
-    heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/services/service_corporate.jpg",
     keyFeatures: [
       "Executive Luxury Fleet (Innova Crysta, Camry, Premium Sedans)",
       "Uniformed, Well-Groomed & Background-Verified Chauffeurs",
@@ -312,7 +312,7 @@ export const servicesData: ServiceItem[] = [
     badge: "Daily Commute",
     description: "End-to-end staff commute solutions with GPS tracking, optimized routing, and verified drivers for corporate offices.",
     longDescription: "Ensure your employees travel safely, punctually, and comfortably with Taxiyaa Employee Transportation Services. We manage daily shift commute logistics for IT hubs, BPOs, corporate offices, and industrial centers across Mumbai.",
-    heroImage: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/swift_dzire.jpg",
     keyFeatures: [
       "Smart Dynamic Route Optimization & Shift Roster Management",
       "Real-time GPS Tracking & Speed Governor Monitoring",
@@ -342,7 +342,7 @@ export const servicesData: ServiceItem[] = [
     badge: "Special Events",
     description: "Customized wedding fleets, luxury groom cars, guest shuttles, and event transport management.",
     longDescription: "Make your wedding or event extraordinary with Taxiyaa's specialized event fleet logistics. We manage guest venue shuttles, floral-decorated bridal cars, airport guest transfers, and Barat convoy buses across Mumbai and destination wedding spots.",
-    heroImage: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/fleet/innova_crysta.jpg",
     keyFeatures: [
       "Decorated Luxury Groom & Bridal Cars",
       "Guest Convoy Fleet (Innova Crysta, Ertiga, Premium Sedans)",
@@ -372,7 +372,7 @@ export const servicesData: ServiceItem[] = [
     badge: "Custom Travel",
     description: "Custom holiday roadtrips, pilgrimage tours, railway station drops, and bespoke travel packages.",
     longDescription: "Have a unique itinerary? Taxiyaa offers customized travel solutions, pilgrimage packages (Ashtavinayak, Shirdi, Trimbakeshwar, Mahabaleshwar), railway station transfers (Mumbai CST, Dadar, Bandra Terminus, LTT), and hotel booking assistance.",
-    heroImage: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=80",
+    heroImage: "/images/shirdi_temple.jpg",
     keyFeatures: [
       "Tailor-made Multi-City Roadtrip Itineraries",
       "Railway Station Pickups & Drops (CST, Dadar, LTT, Bandra)",
@@ -403,4 +403,5 @@ export function getServiceBySlug(slug: string): ServiceItem | undefined {
       s.aliases.some((a) => a.toLowerCase() === normalized)
   );
 }
+
 
