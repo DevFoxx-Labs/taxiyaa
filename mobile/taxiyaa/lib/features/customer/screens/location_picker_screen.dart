@@ -180,6 +180,7 @@ class _LocationPickerScreenState extends State<LocationPickerScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               itemCount: _suggestions.length,
               separatorBuilder: (_, __) => const Divider(height: 1, color: AppColors.border),
+              separatorBuilder: (_, _) => const Divider(height: 1, color: AppColors.border),
               itemBuilder: (context, index) {
                 final item = _suggestions[index];
                 final isSelected = _selectedLocation == item;

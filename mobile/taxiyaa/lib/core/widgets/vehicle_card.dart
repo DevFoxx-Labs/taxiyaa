@@ -37,6 +37,7 @@ class VehicleCard extends StatelessWidget {
                 vehicle.image,
                 fit: BoxFit.cover,
                 errorBuilder: (_, __, ___) => const Icon(
+                errorBuilder: (_, _, _) => const Icon(
                   Icons.directions_car_outlined,
                   color: AppColors.textGray,
                   size: 32,
