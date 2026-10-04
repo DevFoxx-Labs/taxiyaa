@@ -5,7 +5,7 @@ import 'core/cache/api_cache_service.dart';
 import 'core/constants/app_constants.dart';
 import 'core/network/network_providers.dart';
 import 'core/theme/app_theme.dart';
-import 'features/home/screens/home_screen.dart';
+import 'features/customer/screens/splash_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,8 +32,9 @@ class TaxiyaaApp extends StatelessWidget {
     return MaterialApp(
       title: AppConstants.appName,
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.darkTheme,
-      home: const HomeScreen(),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      home: const SplashScreen(),
     );
   }
 }
