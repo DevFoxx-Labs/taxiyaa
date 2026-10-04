@@ -98,7 +98,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             child: Image.asset(
                               item.image,
                               fit: BoxFit.cover,
-                              errorBuilder: (_, __, ___) => Center(
+                              errorBuilder: (_, _, _) => Center(
                                 child: Icon(item.icon, size: 70, color: AppColors.primary),
                               ),
                             ),

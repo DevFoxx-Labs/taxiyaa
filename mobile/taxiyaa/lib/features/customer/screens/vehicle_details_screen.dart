@@ -41,7 +41,7 @@ class VehicleDetailsScreen extends ConsumerWidget {
                       child: Image.asset(
                         vehicle.image,
                         fit: BoxFit.cover,
-                        errorBuilder: (_, __, ___) => const Center(
+                        errorBuilder: (_, _, _) => const Center(
                           child: Icon(Icons.directions_car, size: 80, color: AppColors.textGray),
                         ),
                       ),
